@@ -8,7 +8,13 @@
     "@testing-library/user-event": "^13.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-particles": "^2.5.3",
+    "react-router-dom": "5",
     "react-scripts": "5.0.1",
+    "react-ui": "^1.0.0-beta.32",
+    "styled-components": "^5.3.6",
+    "tsparticles": "^2.5.3",
+    "tsparticles-preset-sea-anemone": "^2.5.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
