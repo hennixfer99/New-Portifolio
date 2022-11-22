@@ -19,7 +19,8 @@ img{
     max-height: 500px;
     margin: 40px;
     border-radius: 8px;
-
+    -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.63);
 }
 
 @media (max-width: 500px){

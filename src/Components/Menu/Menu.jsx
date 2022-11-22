@@ -17,7 +17,7 @@ return (
        <li>Sobre</li>
       </Link>
       <Link to = "/projetos">
-       <li>projetos</li>
+       <li>Projetos</li>
       </Link>
       <Link to = "/qualificacoes">
        <li>Qualificações</li>

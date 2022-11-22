@@ -41,7 +41,7 @@ const Container = styled.div`
     }
     main{
         border: 1.5px solid #ADB5BD;
-        background-color:#FFFFFF;
+        background-color: #dee2e6;
         backdrop-filter: blur(5px);
         z-index: 1;
         border-radius: 0 0 8px 8px;

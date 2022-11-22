@@ -2,17 +2,19 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: fixed;
-  z-index: 3;
-
   align-items: center;
-  padding: 0 auto;
+  z-index: 20;
+  padding: 0;
   width: 100%;
+  margin-top: -1.5%;
+  min-height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 
-  header {
+  header{
     max-width: 80%;
     margin: 0 auto;
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
   }
 
@@ -29,8 +31,19 @@ const Container = styled.div`
   }
 
   main {
-    margin: 0 auto;
-    padding: 0px 30px 10px 30px;
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+    padding: 20px 30px 10px 30px;
+  }
+
+  main img{
+    max-width: 60%;
+    max-height: 50%;
+    border-radius: 8px;
+  }
+  .img{
+    max-width: 100%;
+    text-align: center;
   }
 
   main h2 {
@@ -42,12 +55,12 @@ const Container = styled.div`
     font-weight: 400;
     font-size: 14px;
   }
-  main button {
-    color: white;
-    background-color: #4529e6;
+  main button{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.11);
     height: 32px;
     padding: 0 20px;
-    border: none;
+    border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -57,27 +70,60 @@ const Container = styled.div`
     scrollbar-color: #bdb4dc transparent;
   }
   *::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
   }
   *::-webkit-scrollbar-thumb {
     background-color: #bdb4dc;
     border-radius: 8px;
-    border: none;
+    border: 1px solid grey;
   }
   @media (max-width: 450px) {
   }
 `;
-const Modal = styled.form`
-  margin: 2% auto 2% auto;
-  background: #ffffff;
+const Modal = styled.div`
+  margin: 7% auto;
+  background-color: #dee2e6;
   border: 1px solid black;
   max-width: 530px;
-  max-height: 90vh;
+  padding: 0 0;
+  z-index: 10;
+  height: 55vh;
   border-radius: 8px;
   overflow-y: scroll;
+
+  h4{
+    font-weight: 600;
+  }
+  h5{
+    font-weight: 400;
+  }
+
+  .tec{
+    max-width: 65%;
+  }
+  .square2{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+  }
+  .project button{
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 670px){
+    max-width: 80%;
+  }
+
   @media (max-width: 450px) {
     margin: 5% auto;
+    .project button{
+    margin-left: 10px;
+  }
   }
 `;
 

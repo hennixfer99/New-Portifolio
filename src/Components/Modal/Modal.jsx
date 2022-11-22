@@ -7,16 +7,27 @@ function NewModal({
   tecnologies,
   modalOpen,
   setModalOpen,
+  setProjectNumber,
+  img,
+  vercel,
+  code
 }) {
   const modalPrimaryButtonRef = useRef();
   const modalCloseButtonRef = useRef();
 
+  function close(){
+    setModalOpen(false)
+    setProjectNumber(0)
+  }
+
   return (
+    <>
+    {modalOpen && 
+    (
     <Container>
       <div>
-        {modalOpen && (
           <Modal
-            modalOpen ={modalOpen}
+            modalOpen = {modalOpen}
             closeButtonRef={modalCloseButtonRef}
             primaryButtonRef={modalPrimaryButtonRef}
             size="small"
@@ -24,16 +35,27 @@ function NewModal({
           >
             <header>
               <h2>{title}</h2>
-              <button onClick={() => setModalOpen(false)}>x</button>
+              <button onClick={() => close()}>x</button>
             </header>
             <main>
+              <div className="img"><img src={img} alt="project" /></div>
               <p>{description}</p>
-              <h4>{tecnologies}</h4>
+              <div className="square2">
+              <div className="tec">
+              <h4>Teconologias Utilizadas:</h4>
+              <h5>{tecnologies}</h5>
+              </div>
+              <div className="project">
+                <button onClick={vercel}>Deploy</button>
+                <button onClick={code}>Repositório</button>
+              </div>
+              </div>
             </main>
           </Modal>
-        )}
       </div>
     </Container>
+    )}
+    </>
   );
 }
 
