@@ -112,7 +112,7 @@ function Projects() {
     conhecimento em react, o objetivo era fazer um site onde o usuário pode
     se cadastrar e salvar as tecnologias listadas por ele em níveis de
     dificuldade."
-    tecnologies = "React.js | Toasty.fy"
+    tecnologies = "React.js | Toasty.fy | API"
     setProjectNumber = {setProjectNumber}
     img={kenzieHub}
     vercel = {project1}
@@ -144,7 +144,7 @@ function Projects() {
     title="Torre de Hanoi"
     description ="Foi um projeto individual onde fiz a criação do jogo torre de Hanoi com 3
     dificuldades diferentes e design responsivo."
-    tecnologies = "DOM"
+    tecnologies = "DOM | HTML | CSS | JS"
     setProjectNumber = {setProjectNumber}
     img = {torre}
     vercel = {project3}
