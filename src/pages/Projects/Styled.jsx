@@ -44,7 +44,7 @@ button:hover{
 @media (max-width: 500px){
     
     .Modal{
-        
+        overflow-y: auto;
         width: 80%;
     }
 }
