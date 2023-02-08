@@ -1,19 +1,24 @@
 import Container from './Styled';
 import Particle from "../../Components/Particles/Particles"
-import kenzie from "../../imgs/kenzie1.png"
+import kenzieFront from "../../imgs/kenzie1.png"
+import kenzieFullStack from "../../imgs/kenzieFullStack.png"
+import React from 'react';
+import Carousel, { CarouselItem } from '../../Components/Carousel/Carousel';
 
-function Qualifications() {
-
-  
-
+function Qualifications({ children }) {
   
   return (
     <Container>
     <Particle />
     <div className='Modal'>
-
-    <img alt='front-end' src={kenzie} />
-
+    <Carousel>
+      <CarouselItem>
+        <img alt='kenzie1' src={kenzieFront}/>
+      </CarouselItem>
+      <CarouselItem>
+        <img alt='kenzie2' src={kenzieFullStack}/>
+      </CarouselItem>
+    </Carousel>
     </div>
     </Container>
     );

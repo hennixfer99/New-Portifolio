@@ -90,6 +90,7 @@ const Container = styled.div`
         
     }
     &.active main{
+        z-index: 10;
         opacity: 1;
         transition: opacity, 1s;
     }
