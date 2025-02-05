@@ -4,7 +4,7 @@ const Container = styled.div`
 max-width: 100%;
 box-sizing: border-box;
 .modal{
-    background-color: rgba(222, 226, 230, 0.8);
+    background-color: rgba(222, 226, 230, 0.7);
     border-radius: 8px;
     max-width: 100%;
     width: 80vw;
