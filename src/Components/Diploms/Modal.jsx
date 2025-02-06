@@ -1,30 +1,25 @@
 import { Container, Modal } from "./Styled";
 import { useRef } from "react";
 
-function NewModal({
+function DiplomModal({
     title,
-    description,
-    tecnologies,
     modalOpen,
     setModalOpen,
-    setProjectNumber,
     img,
-    vercel,
-    code,
     alt,
+    description,
 }) {
     const modalPrimaryButtonRef = useRef();
     const modalCloseButtonRef = useRef();
 
     function close() {
         setModalOpen(false);
-        setProjectNumber(0);
     }
 
     return (
         <>
             {modalOpen && (
-                <Container>
+                <Container className={modalOpen ? "active" : null}>
                     <Modal
                         modalOpen={modalOpen}
                         closeButtonRef={modalCloseButtonRef}
@@ -41,16 +36,6 @@ function NewModal({
                                 <img src={img} alt={alt} />
                             </div>
                             <p>{description}</p>
-                            <div className="square2">
-                                <div className="tec">
-                                    <h4>Teconologias Utilizadas:</h4>
-                                    <h5>{tecnologies}</h5>
-                                </div>
-                                <div className="project">
-                                    <button onClick={vercel}>Deploy</button>
-                                    <button onClick={code}>Repositório</button>
-                                </div>
-                            </div>
                         </main>
                     </Modal>
                 </Container>
@@ -59,4 +44,4 @@ function NewModal({
     );
 }
 
-export default NewModal;
+export default DiplomModal;

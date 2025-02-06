@@ -119,7 +119,7 @@ function Particle() {
                 backgroundMask: {
                     enable: true,
                     cover: {
-                        value: "#a5a5a5",
+                        value: "#ffffff",
                     },
                 },
                 retina_detect: true,

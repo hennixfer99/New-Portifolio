@@ -10,9 +10,11 @@ const Container = styled.div`
     margin-top: -1.5%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity, 1s;
 
     header {
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: baseline;
@@ -33,52 +35,42 @@ const Container = styled.div`
 
     main {
         max-width: 100%;
-        margin: 0 auto 0 auto;
+        height: 65%;
+        margin: 0 auto;
         padding: 20px 30px 10px 30px;
-    }
-
-    main img {
-        max-width: 60%;
-        max-height: 50%;
-        border-radius: 8px;
-    }
-    .img {
-        max-width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        transition: opacity, 1s;
     }
 
     main h2 {
         font-weight: 500;
         font-size: 16px;
     }
+    main img {
+        height: 100%;
+        border-radius: 8px;
+    }
+    .img {
+        text-align: center;
+    }
 
     main p {
-        font-weight: 400;
-        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
     }
-    main button {
-        color: black;
-        background-color: rgba(0, 0, 0, 0.11);
-        height: 32px;
-        padding: 0 20px;
-        border: 1px solid black;
-        border-radius: 4px;
-        cursor: pointer;
+    &.active {
+        opacity: 1;
+        transition: opacity, 1s;
     }
 
-    * {
-        scrollbar-width: auto;
-        scrollbar-color: #bdb4dc transparent;
+    &.active .modal, main{
+        opacity: 1;
+        transition: opacity, 1s;
     }
-    *::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    *::-webkit-scrollbar-thumb {
-        background-color: #bdb4dc;
-        border-radius: 8px;
-        border: 1px solid grey;
-    }
+
     @media (max-width: 725px) {
         margin-top: -4%;
     }
@@ -98,30 +90,7 @@ const Modal = styled.div`
     z-index: 10;
     height: 55vh;
     border-radius: 8px;
-    overflow-y: scroll;
-
-    h4 {
-        font-weight: 600;
-    }
-    h5 {
-        font-weight: 400;
-    }
-
-    .tec {
-        max-width: 65%;
-    }
-    .square2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-    .project {
-        display: flex;
-        flex-direction: column;
-    }
-    .project button {
-        margin-top: 20px;
-    }
+    overflow-y: scroll;    
 
     @media (max-width: 725px) {
         max-width: 80%;

@@ -1,17 +1,13 @@
-import './App.css';
-import Header from './Components/Header/Header';
-import Routes from './routes/route';
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Routes from "./routes/route";
 function App() {
-
-  
-
-  return (
-  <>
-  <Header />
-  <Routes />
-
-  </>
-  );
+    return (
+        <>
+            <Header />
+            <Routes />
+        </>
+    );
 }
 
 export default App;
