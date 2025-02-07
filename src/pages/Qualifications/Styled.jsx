@@ -22,7 +22,7 @@ const Container = styled.div`
         box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.63);
     }
 
-    @media (max-width: 725px) {
+    @media (max-width: 725px), (max-height: 400px) {
         .Modal {
             padding: 15px 3%;
             width: 80%;
@@ -36,6 +36,8 @@ const Container = styled.div`
         .cards button {
             padding: 15px 0;
             border: 0.3px solid #a4a7aa;
+            color: #000;
+            background: transparent;
             border-radius: 8px;
         }
         .cards button:hover {

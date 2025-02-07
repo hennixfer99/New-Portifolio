@@ -15,6 +15,7 @@ const Container = styled.div`
     button {
         padding: 15px;
         border: 0.3px solid #a4a7aa;
+        color: #000;
         border-radius: 8px;
     }
 
@@ -45,7 +46,7 @@ const Container = styled.div`
         justify-content: space-around;
     }
 
-    @media (max-width: 725px) {
+    @media (max-width: 725px), (max-height: 400px) {
         .Modal {
             overflow-y: auto;
             padding: 15px 3%;

@@ -50,7 +50,8 @@ const Container = styled.div`
         font-size: 16px;
     }
     main img {
-        height: 100%;
+        max-height: 19vh;
+        max-width: 100%;
         border-radius: 8px;
     }
     .img {
