@@ -38,10 +38,6 @@ const Container = styled.div`
         cursor: pointer;
     }
 
-    .buttonreturn:click{
-        
-    }
-
     main {
         border: 1.5px solid #adb5bd;
         background-color: #dee2e6;

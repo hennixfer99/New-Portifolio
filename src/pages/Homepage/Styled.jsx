@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
     max-width: 100%;
+    max-height: 100%;
     box-sizing: border-box;
     .modal {
         background-color: rgba(222, 226, 230, 0.7);
@@ -92,7 +93,6 @@ const Container = styled.div`
         }
         .tecnologies a {
             width: 60px;
-            text-align: center;
         }
         .tecnologies img {
             width: 25px;
@@ -128,8 +128,15 @@ const Container = styled.div`
     }
     @media (max-width: 376px) {
         .tecnologies {
-            max-height: 90px;
+            max-height: 50px;
             width: 95%;
+        }
+        .tecnologies a {
+            font-size: 5px;
+        }
+        .tecnologies img {
+            width: 20px;
+            height: 20px;
         }
     }
 `;

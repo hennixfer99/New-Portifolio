@@ -19,7 +19,7 @@ const Container = styled.div`
         border-radius: 8px;
     }
 
-    button:hover {
+    .cards button:hover {
         color: white;
         border: 0.5px solid #494b4c;
         background-color: rgba(0, 0, 0, 0.3);
