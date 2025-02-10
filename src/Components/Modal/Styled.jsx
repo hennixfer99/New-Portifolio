@@ -6,7 +6,6 @@ const Container = styled.div`
     z-index: 20;
     padding: 0;
     width: 100%;
-    padding-top: 5%;
     margin-top: -1.5%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -33,7 +32,7 @@ const Container = styled.div`
 
     main {
         max-width: 100%;
-        margin: 0 auto 0 auto;
+        margin: 0 auto;
         padding: 20px 30px 10px 30px;
     }
 
