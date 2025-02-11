@@ -5,7 +5,7 @@ import NewModal from "../../Components/Modal/Modal.jsx";
 import kenzieHub from "../../imgs/kenzieHub.png";
 import myPlant from "../../imgs/myPlant.png";
 import torre from "../../imgs/torre.png";
-import kenzieShop from "../../imgs/kenzieShop.png";
+import pokemonShop from "../../imgs/pokemonShop.png";
 import recikle from "../../imgs/recikle.png";
 import komercio from "../../imgs/komercio.png";
 
@@ -22,13 +22,13 @@ function Projects() {
     }
     function git2() {
         const redirect = window.open(
-            "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzieshop-hennixfer99"
+            "https://github.com/hennixfer99/PokemonShop"
         );
         return redirect;
     }
     function git3() {
         const redirect = window.open(
-            "https://github.com/Kenzie-Academy-Brasil-Developers/m2-entrega-torre-de-hanoi-sprint-1a-hennixfer99"
+            "https://github.com/hennixfer99/torre-de-hanoi"
         );
         return redirect;
     }
@@ -55,14 +55,12 @@ function Projects() {
         return redirect;
     }
     function project2() {
-        const redirect = window.open(
-            "https://react-entrega-s3-kenzieshop-hennixfer99.vercel.app"
-        );
+        const redirect = window.open("https://pokemon-shop-v2.vercel.app/");
         return redirect;
     }
     function project3() {
         const redirect = window.open(
-            "https://kenzie-academy-brasil-developers.github.io/m2-entrega-torre-de-hanoi-sprint-1a-hennixfer99/"
+            "https://hennixfer99.github.io/torre-de-hanoi/"
         );
         return redirect;
     }
@@ -147,14 +145,14 @@ function Projects() {
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
-                        title="Kenzie shop"
+                        title="Pokemon Shop"
                         description="Projeto simulando um E-commerce aonde comecei a praticar Redux e Thunk durante a execução."
                         tecnologies="React.js, Redux, Thunk"
                         setProjectNumber={setProjectNumber}
-                        img={kenzieShop}
+                        img={pokemonShop}
                         vercel={project2}
                         code={git2}
-                        alt={"Projeto Kenzie shop"}
+                        alt={"Projeto Pokemon Shop"}
                     />
                 ) : (
                     <></>
