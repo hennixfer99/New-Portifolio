@@ -100,7 +100,7 @@ function Projects() {
                     </button>
 
                     <button className="modalOpen" onClick={() => modalName(2)}>
-                        Kenzie Shop
+                        Pokemon Shop
                     </button>
 
                     <button className="modalOpen" onClick={() => modalName(3)}>
