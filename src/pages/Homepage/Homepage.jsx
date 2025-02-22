@@ -48,7 +48,7 @@ function Homepage() {
                             garantem soluções de alta qualidade. Comprometido
                             com o aprendizado contínuo, busco sempre aprimorar
                             minhas habilidades e aplicar as melhores práticas no
-                            meu trabalho.
+                            meu trabalho. 
                         </p>
                     </section>
                     <section>
