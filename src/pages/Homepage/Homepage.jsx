@@ -17,8 +17,8 @@ import angularjs from "../../imgs/angularjs.png";
 import azure from "../../imgs/azure.png";
 import apiRest from "../../imgs/apiRest.png";
 import nextjs from "../../imgs/nextjs.svg";
-import postegressql from "../../imgs/postgressql.png"
-import linux from "../../imgs/linux.png"
+import postegressql from "../../imgs/postgressql.png";
+import linux from "../../imgs/linux.png";
 
 function Homepage() {
     return (
@@ -38,20 +38,21 @@ function Homepage() {
                     <section>
                         <h2>Sobre mim:</h2>
                         <p>
-                            Desenvolvedor Web formado em Desenvolvimento Web
-                            Full Stack pela Kenzie Academy Brasil e graduando em
-                            Ciências da Computação pela Cruzeiro do Sul e
-                            graduando em Sistemas para Internet na Fatec Rubens
-                            Lara. Conhecimento e experiência abrangente, focando
-                            na criação de aplicações web eficientes e
-                            responsivas. Comprometido com o aprendizado contínuo
-                            e a aplicação das melhores práticas de programação,
-                            visando sempre a entrega de soluções de alta
-                            qualidade.
+                            Sou Desenvolvedor Web Full Stack, formado pela
+                            Kenzie Academy Brasil e atualmente cursando Ciência
+                            da Computação e Sistemas para Internet nas
+                            universidades Cruzeiro do Sul e Fatec Rubens Lara.
+                            Tenho um sólido conhecimento e experiência no
+                            desenvolvimento de aplicações web eficientes e
+                            responsivas, com foco em práticas de programação que
+                            garantem soluções de alta qualidade. Comprometido
+                            com o aprendizado contínuo, busco sempre aprimorar
+                            minhas habilidades e aplicar as melhores práticas no
+                            meu trabalho.
                         </p>
                     </section>
                     <section>
-                        <h2>Competencias:</h2>
+                        <h2>Competências:</h2>
                         <div className="tecnologies">
                             <a
                                 href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
