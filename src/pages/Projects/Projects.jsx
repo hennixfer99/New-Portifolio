@@ -126,11 +126,10 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Kenzie hub"
-                        description="Foi um projeto individual onde fiz meus primeiros testes de
-    conhecimento em react, o objetivo era fazer um site onde o usuário pode
-    se cadastrar e salvar as tecnologias listadas por ele em níveis de
-    dificuldade."
-                        tecnologies="React.js | Toasty.fy | API"
+                        description="Foi um projeto individual mimic onde fiz meus primeiros testes de
+    conhecimento em react, o objetivo era fazer o uso da lib React pela primeira vez, seguir um fígma e o tempo de produção foi de 1 semana, o usuário pode
+    se cadastrar e salvar as tecnologias listadas por ele em níveis de dificuldade."
+                        tecnologies="React | Toasty.fy | API | JavaScript"
                         setProjectNumber={setProjectNumber}
                         img={kenzieHub}
                         vercel={project1}
@@ -146,8 +145,10 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Pokemon Shop"
-                        description="Projeto simulando um E-commerce aonde comecei a praticar Redux e Thunk durante a execução."
-                        tecnologies="React.js, Redux, Thunk"
+                        description="Projeto individual autoral aonde simulo um E-commerce, o tempo de produção foi de 5 dias e o processo começou comigo 
+                        montando um pequeno mockup após a montagem todo o código foi feito seguindo o estilo pré-definido, neste projeto comecei a praticar 
+                        Redux e Thunk durante a execução."
+                        tecnologies="React | Redux | Thunk | JavaScript | Particles"
                         setProjectNumber={setProjectNumber}
                         img={pokemonShop}
                         vercel={project2}
@@ -162,8 +163,9 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Torre de Hanoi"
-                        description="Foi um projeto individual onde fiz a criação do jogo torre de Hanoi com 3
-    dificuldades diferentes e design responsivo."
+                        description="Foi um projeto individual autoral onde fiz a criação do jogo torre de Hanoi com 3 
+                        dificuldades diferentes, o tempo de produção foi de 2 semanas e o objetivo foi a prática 
+                        de DOM, aprimoramento da linguagem JavaScript e do design responsivo."
                         tecnologies="DOM | HTML | CSS | JS"
                         setProjectNumber={setProjectNumber}
                         img={torre}
@@ -179,11 +181,12 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="My Plant"
-                        description="Foi um projeto realizado em grupo onde gostaríamos que amantes de
-    plantas se adicionassem para que pudessem fazer trocas de mudas, saber
-    mais sobre como zelar de suas plantas e pudessem se sentir confortáveis
-    com o minimalismo nas páginas."
-                        tecnologies="React.js | Fake Api | Scrum | Styled-components | Node.Js "
+                        description="Foi um projeto autoral realizado em grupo utilizando a metodologia ágil SCRUM para organização, 
+                        design web e mobile construídos no Fígma e uma Fake API feita em Node.js aonde armazenamos os dados de plantas que são enviados ao nosso site,
+                        o projeto foi criado com o intuito de realizar uma tarefa de fim de módulo do nosso curso de programação e a ideia é um site onde gostaríamos 
+                        que amantes de plantas se adicionassem para que pudessem fazer trocas de mudas, saber mais sobre como zelar de suas plantas e pudessem se sentir confortáveis
+                        com o minimalismo nas páginas."
+                        tecnologies="React | Fake Api | Scrum | Styled-components | Node.Js | JavaScript "
                         setProjectNumber={setProjectNumber}
                         img={myPlant}
                         vercel={project4}
@@ -198,8 +201,11 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Recikle"
-                        description="Foi um projeto realizado em grupo onde criamos uma Api para coleta de lixo reciclavel
-     aonde uma empresa pode indicar o material que deseja coletar e o usuário pode marcar pontos de coleta"
+                        description="Foi um projeto autoral em grupo utilizando a metodologia ágil SCRUM para organização, diagramas para fácil entendimento, docker para criação de containers e
+                        realizamos dailys regularmente para fazer alinhamentos e nos ajudar com o planejamento geral, o projeto foi criado com o intuito de realizar uma tarefa de fim de módulo 
+                        do nosso curso de programação e a ideia é criar uma API aonde informaremos para o usuário quando e onde acontece a coleta de lixo reciclavel assim facilitando a vida de um usuário 
+                        que acabou de se mudar ou que se esqueceu dos dias aonde ocorre a passagem do caminhão, não só isso mas também ter contato com empresas aonde as mesmas podem deixar rastreadores nos seus veículos 
+                        para que o usuário tenha a facilidade e comodidade de ver o horário que ocorrerá as coletas"
                         tecnologies="Python | Django | Djangorestframework | Django Generic View | Docker | PostgresSQL"
                         setProjectNumber={setProjectNumber}
                         img={recikle}
@@ -215,7 +221,7 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Komercio"
-                        description="Projeto feito para fixação e aprendizado de testes feitos com djangorestframework"
+                        description="Projeto mimic feito para fixação e aprendizado de testes feitos em Django utilizando Python, RestFramework e PostgresSql para sua construção"
                         tecnologies="Python | Django | Djangorestframework | PostgresSQL | Django Generic View"
                         setProjectNumber={setProjectNumber}
                         img={komercio}
