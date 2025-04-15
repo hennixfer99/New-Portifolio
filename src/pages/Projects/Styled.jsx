@@ -1,21 +1,14 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    .modalOpen {
+    button {
         background-color: transparent;
-        display: flex;
         border-radius: 4px;
-        height: 32px;
-        text-align: center;
-        align-items: center;
         cursor: pointer;
         margin: 10px 0;
-    }
-
-    button {
         padding: 15px;
         border: 0.3px solid #a4a7aa;
-        color: #000;
+        background-color: transparent;
         border-radius: 8px;
     }
 
@@ -33,7 +26,7 @@ const Container = styled.div`
     }
 
     .Modal {
-        background-color: rgba(222, 226, 230, 0.7);
+        background-color: rgba(222, 226, 230, 0.9);
         border-radius: 8px;
         max-width: 100%;
         width: 80vw;
@@ -49,7 +42,7 @@ const Container = styled.div`
     @media (max-width: 725px), (max-height: 400px) {
         .Modal {
             overflow-y: auto;
-            padding: 15px 3%;
+            padding: 0 3%;
             width: 80%;
         }
     }

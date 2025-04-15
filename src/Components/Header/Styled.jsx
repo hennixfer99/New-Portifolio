@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
     display: flex;
     justify-content: space-between;
+    z-index: 2;
     align-items: center;
     -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 10px 6px rgba(0, 0, 0, 0.63);

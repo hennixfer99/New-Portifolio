@@ -24,8 +24,9 @@ function NewModal({
     return (
         <>
             {modalOpen && (
-                <Container>
+                <Container onClick={() => close()}>
                     <Modal
+                        onClick={(e) => e.stopPropagation()}
                         modalOpen={modalOpen}
                         closeButtonRef={modalCloseButtonRef}
                         primaryButtonRef={modalPrimaryButtonRef}
@@ -33,24 +34,30 @@ function NewModal({
                         className="modal"
                     >
                         <header>
-                            <h2>{title}</h2>
+                            <h1>{title}</h1>
                             <button onClick={() => close()}>x</button>
                         </header>
                         <main>
-                            <div className="img">
-                                <img src={img} alt={alt} />
-                            </div>
+                            <img src={img} alt={alt} />
                             <p>{description}</p>
-                            <div className="square2">
+                            <section className="square2">
                                 <div className="tec">
-                                    <h4>Teconologias Utilizadas:</h4>
-                                    <h5>{tecnologies}</h5>
+                                    <h2>Teconologias Utilizadas:</h2>
+                                    <p>{tecnologies}</p>
+                                    <div className="buttons">
+                                        <button onClick={code}>
+                                            Repositório
+                                        </button>
+                                        {vercel ? (
+                                            <button onClick={vercel}>
+                                                Deploy
+                                            </button>
+                                        ) : (
+                                            <></>
+                                        )}
+                                    </div>
                                 </div>
-                                <div className="project">
-                                    <button onClick={vercel}>Deploy</button>
-                                    <button onClick={code}>Repositório</button>
-                                </div>
-                            </div>
+                            </section>
                         </main>
                     </Modal>
                 </Container>

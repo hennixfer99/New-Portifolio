@@ -6,6 +6,7 @@ import kenzieFront from "../../imgs/kenzie1.png";
 import kenzieFullStack from "../../imgs/kenzieFullStack.png";
 import googleAIEssentials from "../../imgs/googleAIEssentials.png";
 import DiplomModal from "../../Components/Diploms/Modal";
+import networkDefense from "../../imgs/networkDefense.png";
 
 function Qualifications({ children }) {
     const [width, setWidth] = useState(window.innerWidth);
@@ -45,6 +46,12 @@ function Qualifications({ children }) {
                             <img
                                 alt="Google AI Essentials certificate"
                                 src={googleAIEssentials}
+                            />
+                        </CarouselItem>
+                        <CarouselItem>
+                            <img
+                                alt="Cisco Network Defense certificate"
+                                src={networkDefense}
                             />
                         </CarouselItem>
                     </Carousel>

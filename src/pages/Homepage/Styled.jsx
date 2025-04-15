@@ -5,7 +5,7 @@ const Container = styled.div`
     max-height: 100%;
     box-sizing: border-box;
     .modal {
-        background-color: rgba(222, 226, 230, 0.7);
+        background-color: rgba(222, 226, 230, 0.9);
         border-radius: 8px;
         max-width: 100%;
         width: 80vw;
@@ -13,27 +13,33 @@ const Container = styled.div`
         margin: 1.5% auto;
         -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.63);
+    }
+    .first-block {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        height: 30rem;
+        margin: 0 auto;
     }
     .aboutMe {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        max-width: 45%;
+        max-width: 50%;
         margin: 0 5px;
     }
     .me {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin: 0 5px;
+        margin: 35px 5px;
         text-align: center;
     }
     h2 {
+        text-align: center;
         font-size: 20px;
     }
-    p {
+    .aboutMe p {
         font-size: 14px;
     }
 
@@ -48,18 +54,17 @@ const Container = styled.div`
     .tecnologies {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        max-height: 250px;
-        margin: 0 10px;
+        max-height: 9rem;
+        margin: 0 15px;
         overflow: auto;
         overflow-x: hidden;
-        box-sizing: border-box;
+        overflow-y: auto;
     }
 
     .tecnologies a {
         width: 80px;
-        margin: 1px 1px;
-        padding: 5px 1px;
+        margin: 1px 15px;
+        padding: 5px 5px;
         text-align: center;
         text-decoration: none;
         color: #000;
@@ -86,25 +91,24 @@ const Container = styled.div`
         border-radius: 8px;
         border: 1px solid grey;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 800px), (max-height: 855px) {
         .tecnologies {
-            max-height: 100px;
-            width: 9 5%;
-        }
-        .tecnologies a {
-            width: 60px;
+            max-height: 6.5rem;
+            flex-wrap: nowrap;
+            overflow: auto;
+            overflow-x: auto;
+            overflow-y: hidden;
         }
         .tecnologies img {
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
         }
     }
-    @media (max-width: 725px) {
+    @media (max-width: 770px) {
         .modal {
-            padding: 15px 3%;
+            padding: 0 3%;
             width: 80%;
-            flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
 
         .personal-img {
@@ -112,31 +116,55 @@ const Container = styled.div`
             height: 160px;
         }
 
-        .me {
-            height: 250px;
-            justify-content: space-around;
+        .first-block {
+            flex-direction: column-reverse;
         }
+
+        .me {
+            margin: 15px 0;
+        }
+
         .aboutMe {
             max-width: 100%;
         }
+
         h2 {
             font-size: 14px;
         }
         p {
             font-size: 12px;
         }
-    }
-    @media (max-width: 376px) {
+
+        .skills {
+            margin-top: 4rem;
+        }
         .tecnologies {
-            max-height: 50px;
-            width: 95%;
+            max-width: 82%;
+            margin: 0 auto;
         }
-        .tecnologies a {
-            font-size: 5px;
+    }
+    @media (max-width: 376px) and (min-height: 700px) {
+        .modal {
+            height: 90vh;
         }
-        .tecnologies img {
-            width: 20px;
-            height: 20px;
+        .skills {
+            margin-top: 7rem;
+        }
+        .tecnologies {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 376px) and (max-height: 690px) {
+        .modal {
+            height: 100vh;
+        }
+        .skills {
+            margin-top: 7rem;
+        }
+        .tecnologies {
+            max-width: 90%;
+            margin: 0 auto;
         }
     }
 `;

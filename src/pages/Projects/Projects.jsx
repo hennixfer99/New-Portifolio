@@ -14,73 +14,27 @@ function Projects() {
 
     const [projectNumber, setProjectNumber] = useState(0);
 
-    function git1() {
-        const redirect = window.open(
-            "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-hennixfer99"
-        );
-        return redirect;
-    }
-    function git2() {
-        const redirect = window.open(
-            "https://github.com/hennixfer99/PokemonShop"
-        );
-        return redirect;
-    }
-    function git3() {
-        const redirect = window.open(
-            "https://github.com/hennixfer99/torre-de-hanoi"
-        );
-        return redirect;
-    }
-    function git4() {
-        const redirect = window.open(
-            "https://github.com/hennixfer99/M3-ProjetoCapstone--Alex-Grupo3"
-        );
-        return redirect;
-    }
-    function git5() {
-        const redirect = window.open("https://github.com/vitorschmidt/Recikle");
-        return redirect;
-    }
-    function git6() {
-        const redirect = window.open(
-            "https://github.com/Kenzie-Academy-Brasil-Developers/m5-sprint5-komercio-hennixfer99"
-        );
-        return redirect;
-    }
-    function project1() {
-        const redirect = window.open(
-            "https://react-entrega-s2-kenzie-hub-hennixfer99.vercel.app"
-        );
-        return redirect;
-    }
-    function project2() {
-        const redirect = window.open("https://pokemon-shop-v2.vercel.app/");
-        return redirect;
-    }
-    function project3() {
-        const redirect = window.open(
-            "https://hennixfer99.github.io/torre-de-hanoi/"
-        );
-        return redirect;
-    }
-    function project4() {
-        const redirect = window.open(
-            "https://m3-projeto-capstone-alex-grupo3-paulo-david.vercel.app"
-        );
-        return redirect;
-    }
-    function project5() {
-        const redirect = window.open(
-            "https://recikle-projeto.herokuapp.com/api/"
-        );
-        return redirect;
-    }
-    function project6() {
-        const redirect = window.open(
-            "https://komercio-generic-view-henrique.herokuapp.com/api/"
-        );
-        return redirect;
+    const repositorios = [
+        "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-hennixfer99",
+        "https://github.com/hennixfer99/PokemonShop",
+        "https://github.com/hennixfer99/torre-de-hanoi",
+        "https://github.com/hennixfer99/M3-ProjetoCapstone--Alex-Grupo3",
+        "https://github.com/vitorschmidt/Recikle",
+        "https://github.com/Kenzie-Academy-Brasil-Developers/m5-sprint5-komercio-hennixfer99",
+    ];
+
+    const deploys = [
+        "https://react-entrega-s2-kenzie-hub-hennixfer99.vercel.app",
+        "https://pokemon-shop-v2.vercel.app/",
+        "https://hennixfer99.github.io/torre-de-hanoi/",
+        "https://m3-projeto-capstone-alex-grupo3-paulo-david.vercel.app",
+        "https://recikle-projeto.herokuapp.com/api/",
+        "https://komercio-generic-view-henrique.herokuapp.com/api/",
+    ];
+
+    function abrirLink(tipo, index) {
+        const url = tipo === "repo" ? repositorios[index] : deploys[index];
+        return window.open(url);
     }
 
     function modalName(nome) {
@@ -126,14 +80,15 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Kenzie hub"
-                        description="Foi um projeto individual mimic onde fiz meus primeiros testes de
-    conhecimento em react, o objetivo era fazer o uso da lib React pela primeira vez, seguir um fígma e o tempo de produção foi de 1 semana, o usuário pode
-    se cadastrar e salvar as tecnologias listadas por ele em níveis de dificuldade."
+                        description="Projeto individual no estilo mimic, desenvolvido como exercício introdutório em React. 
+                        O objetivo foi aplicar os primeiros conceitos da biblioteca React seguindo um layout  pré-definidos no Figma. 
+                        A aplicação permite que o usuário se cadastre, adicione tecnologias e categorize seu nível de conhecimento em cada uma delas. 
+                        O projeto foi desenvolvido em uma semana."
                         tecnologies="React | Toasty.fy | API | JavaScript"
                         setProjectNumber={setProjectNumber}
                         img={kenzieHub}
-                        vercel={project1}
-                        code={git1}
+                        vercel={() => abrirLink("deploy", 0)}
+                        code={() => abrirLink("repo", 0)}
                         alt={"Projeto Kenzie hub"}
                     />
                 ) : (
@@ -145,14 +100,15 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Pokemon Shop"
-                        description="Projeto individual autoral aonde simulo um E-commerce, o tempo de produção foi de 5 dias e o processo começou comigo 
-                        montando um pequeno mockup após a montagem todo o código foi feito seguindo o estilo pré-definido, neste projeto comecei a praticar 
-                        Redux e Thunk durante a execução."
+                        description="Projeto individual no estilo autoral, onde foi simulado um e-commerce. 
+                        O tempo de produção foi de cinco dias e o processo teve início com a criação de um mockup simples. 
+                        A partir disso, todo o código foi desenvolvido seguindo um estilo previamente definido. 
+                        Durante a implementação, iniciei a prática com Redux e Thunk."
                         tecnologies="React | Redux | Thunk | JavaScript | Particles"
                         setProjectNumber={setProjectNumber}
                         img={pokemonShop}
-                        vercel={project2}
-                        code={git2}
+                        vercel={() => abrirLink("deploy", 1)}
+                        code={() => abrirLink("repo", 1)}
                         alt={"Projeto Pokemon Shop"}
                     />
                 ) : (
@@ -163,14 +119,13 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Torre de Hanoi"
-                        description="Foi um projeto individual autoral onde fiz a criação do jogo torre de Hanoi com 3 
-                        dificuldades diferentes, o tempo de produção foi de 2 semanas e o objetivo foi a prática 
-                        de DOM, aprimoramento da linguagem JavaScript e do design responsivo."
-                        tecnologies="DOM | HTML | CSS | JS"
+                        description="Projeto individual no estilo autoral, focado na criação do jogo Torre de Hanoi com três níveis de dificuldade. 
+                        O tempo de produção foi de duas semanas, com o objetivo de praticar manipulação do DOM, aprimorar a linguagem JavaScript e trabalhar com design responsivo."
+                        tecnologies="DOM | HTML | CSS | JavaScript"
                         setProjectNumber={setProjectNumber}
                         img={torre}
-                        vercel={project3}
-                        code={git3}
+                        vercel={() => abrirLink("deploy", 2)}
+                        code={() => abrirLink("repo", 2)}
                         alt={"Projeto Torre de Hanoi"}
                     />
                 ) : (
@@ -181,16 +136,15 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="My Plant"
-                        description="Foi um projeto autoral realizado em grupo utilizando a metodologia ágil SCRUM para organização, 
-                        design web e mobile construídos no Fígma e uma Fake API feita em Node.js aonde armazenamos os dados de plantas que são enviados ao nosso site,
-                        o projeto foi criado com o intuito de realizar uma tarefa de fim de módulo do nosso curso de programação e a ideia é um site onde gostaríamos 
-                        que amantes de plantas se adicionassem para que pudessem fazer trocas de mudas, saber mais sobre como zelar de suas plantas e pudessem se sentir confortáveis
-                        com o minimalismo nas páginas."
+                        description="Projeto em grupo no estilo autoral, desenvolvido como atividade de encerramento de módulo do curso, utilizando a metodologia ágil Scrum para organização. 
+                        O design web e mobile foi criado no Figma, e uma fake API construída em Node.js foi responsável por armazenar os dados de plantas enviados ao site. 
+                        A proposta da aplicação é oferecer um espaço para que amantes de plantas possam realizar trocas de mudas, aprender mais sobre cuidados com suas plantas e interagir em um ambiente minimalista e acolhedor. 
+                        Atuei com foco principal no desenvolvimento da aplicação, assumindo a maior parte da carga de implementação."
                         tecnologies="React | Fake Api | Scrum | Styled-components | Node.Js | JavaScript "
                         setProjectNumber={setProjectNumber}
                         img={myPlant}
-                        vercel={project4}
-                        code={git4}
+                        vercel={() => abrirLink("deploy", 3)}
+                        code={() => abrirLink("repo", 3)}
                         alt={"Projeto My plant"}
                     />
                 ) : (
@@ -201,16 +155,15 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Recikle"
-                        description="Foi um projeto autoral em grupo utilizando a metodologia ágil SCRUM para organização, diagramas para fácil entendimento, docker para criação de containers e
-                        realizamos dailys regularmente para fazer alinhamentos e nos ajudar com o planejamento geral, o projeto foi criado com o intuito de realizar uma tarefa de fim de módulo 
-                        do nosso curso de programação e a ideia é criar uma API aonde informaremos para o usuário quando e onde acontece a coleta de lixo reciclavel assim facilitando a vida de um usuário 
-                        que acabou de se mudar ou que se esqueceu dos dias aonde ocorre a passagem do caminhão, não só isso mas também ter contato com empresas aonde as mesmas podem deixar rastreadores nos seus veículos 
-                        para que o usuário tenha a facilidade e comodidade de ver o horário que ocorrerá as coletas"
+                        description="Projeto em grupo no estilo autoral, desenvolvido como atividade de encerramento de módulo do curso, utilizando a metodologia ágil Scrum para organização e realização de dailys de alinhamento. 
+                        O projeto foi estruturado com o uso de diagramas para facilitar o entendimento, além de Docker para a criação de containers. 
+                        A proposta da aplicação é criar uma API que informa aos usuários os dias e horários da coleta de lixo reciclável, facilitando a vida de quem acabou de se mudar ou esqueceu os horários. 
+                        Além disso, a API permite que empresas de coleta de lixo instalem rastreadores nos seus veículos, proporcionando maior comodidade ao usuário ao acompanhar os horários das coletas. Participei ativamente do desenvolvimento da API e na organização do fluxo de trabalho dentro do time."
                         tecnologies="Python | Django | Djangorestframework | Django Generic View | Docker | PostgresSQL"
                         setProjectNumber={setProjectNumber}
                         img={recikle}
-                        vercel={project5}
-                        code={git5}
+                        // vercel={() => abrirLink("deploy", 4)}
+                        code={() => abrirLink("repo", 4)}
                         alt={"Projeto Recikle"}
                     />
                 ) : (
@@ -221,12 +174,13 @@ function Projects() {
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
                         title="Komercio"
-                        description="Projeto mimic feito para fixação e aprendizado de testes feitos em Django utilizando Python, RestFramework e PostgresSql para sua construção"
+                        description="Projeto no estilo mimic, desenvolvido com o objetivo de fixação e aprendizado de testes em Django. 
+                        A aplicação foi construída utilizando Python, Django Rest Framework e PostgreSQL, focando na implementação de testes automatizados para garantir a qualidade e funcionamento da API."
                         tecnologies="Python | Django | Djangorestframework | PostgresSQL | Django Generic View"
                         setProjectNumber={setProjectNumber}
                         img={komercio}
-                        vercel={project6}
-                        code={git6}
+                        // vercel={() => abrirLink("deploy", 5)}
+                        code={() => abrirLink("repo", 5)}
                         alt={"Projeto Komercio"}
                     />
                 ) : (
