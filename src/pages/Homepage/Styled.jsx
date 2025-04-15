@@ -147,6 +147,9 @@ const Container = styled.div`
         .modal {
             height: 90vh;
         }
+        .first-block {
+            margin-top: 2rem;
+        }
         .skills {
             margin-top: 7rem;
         }
@@ -158,6 +161,9 @@ const Container = styled.div`
     @media (max-width: 400px) and (max-height: 690px) {
         .modal {
             height: 100vh;
+        }
+        .first-block {
+            margin-top: 2rem;
         }
         .skills {
             margin-top: 7rem;
