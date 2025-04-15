@@ -143,7 +143,7 @@ const Container = styled.div`
             margin: 0 auto;
         }
     }
-    @media (max-width: 376px) and (min-height: 700px) {
+    @media (max-width: 400px) and (min-height: 700px) {
         .modal {
             height: 90vh;
         }
@@ -155,7 +155,7 @@ const Container = styled.div`
             margin: 0 auto;
         }
     }
-    @media (max-width: 376px) and (max-height: 690px) {
+    @media (max-width: 400px) and (max-height: 690px) {
         .modal {
             height: 100vh;
         }

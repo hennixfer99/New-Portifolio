@@ -7,7 +7,8 @@ const Container = styled.div`
         cursor: pointer;
         margin: 10px 0;
         padding: 15px;
-        border: 0.3px solid #a4a7aa;
+        color: #000;
+        border: 0.5px solid #a4a7aa;
         background-color: transparent;
         border-radius: 8px;
     }
