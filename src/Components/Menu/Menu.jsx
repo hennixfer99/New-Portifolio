@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Container from "./Styled";
-import github from "../../imgs/github.png";
-import linkedin from "../../imgs/linkedin.png";
+import gh from "../../imgs/github.png";
+import lk from "../../imgs/linkedin.png";
 
-function Menu({ abrir, sair, link1, link2 }) {
+function Menu({ abrir, sair }) {
     return (
         <Container className={abrir ? "active" : null}>
             <div className="menu-animation">
@@ -12,7 +12,7 @@ function Menu({ abrir, sair, link1, link2 }) {
                         className="buttonreturn"
                         onClick={() => sair(false)}
                     >
-                        <p>X</p>
+                        X
                     </button>
                 </header>
                 <main>
@@ -25,12 +25,29 @@ function Menu({ abrir, sair, link1, link2 }) {
                     <Link to="/qualificacoes" onClick={() => sair(false)}>
                         <li>Qualificações</li>
                     </Link>
-                    <button onClick={link1}>
-                        <img src={github} alt="github" />
-                    </button>
-                    <button onClick={link2}>
-                        <img src={linkedin} alt="linkedin" />
-                    </button>
+                    <a
+                        href="https://github.com/hennixfer99"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => sair(false)}
+                    >
+                        <img
+                            src={gh}
+                            alt="Acessar meus repositórios no GitHub"
+                        />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/henrique-ferreira-mendes-0012451b2/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => sair(false)}
+                    >
+                        <img
+                            src={lk}
+                            alt="Acessar meu perfil profissional no LinkedIn"
+                        />
+                    </a>
                 </main>
             </div>
         </Container>

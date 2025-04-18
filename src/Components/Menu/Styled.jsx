@@ -36,6 +36,8 @@ const Container = styled.div`
         color: black;
         border: none;
         cursor: pointer;
+        opacity: 0;
+        transition: opacity, 1s;
     }
 
     main {
@@ -52,7 +54,7 @@ const Container = styled.div`
         max-height: 32px;
         margin-bottom: 20px;
     }
-    button {
+    a {
         background-color: transparent;
         border: none;
         margin-left: 15px;
@@ -72,25 +74,6 @@ const Container = styled.div`
         font-weight: 600;
         color: #495057;
     }
-    p {
-        font-weight: 600;
-        height: 40px;
-        margin-top: 20px;
-        padding-top: 20px;
-        padding-left: 35px;
-        border-top: 1.5px solid #adb5bd;
-        cursor: pointer;
-        text-align: start;
-        opacity: 0;
-        color: #495057;
-    }
-    button p {
-        margin: 0 0;
-        padding: 0 0;
-        border: none;
-        opacity: 0;
-    }
-
     &.active {
         height: 600px;
     }
@@ -102,7 +85,7 @@ const Container = styled.div`
         z-index: 1050;
     }
     &.active li,
-    p {
+    &.active button {
         opacity: 1;
         transition: opacity, 0.5s;
     }

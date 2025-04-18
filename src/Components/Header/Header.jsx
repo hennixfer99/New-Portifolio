@@ -3,6 +3,7 @@ import menu from "../../imgs/Menu.png";
 import Menu from "../Menu/Menu";
 import gh from "../../imgs/github.png";
 import lk from "../../imgs/linkedin.png";
+import logo from "../../imgs/logo.png";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -11,19 +12,6 @@ function Header() {
     const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 600;
 
-    function github() {
-        const redirect = window.open("https://github.com/hennixfer99");
-        setMenuOpen(false);
-        return redirect;
-    }
-    function linkedin() {
-        const redirect = window.open(
-            "https://www.linkedin.com/in/henrique-ferreira-mendes-0012451b2/"
-        );
-        setMenuOpen(false);
-        return redirect;
-    }
-
     function menuAtivo() {
         if (menuOpen === true) {
             setMenuOpen(false);
@@ -31,7 +19,6 @@ function Header() {
             setMenuOpen(true);
         }
     }
-
 
     useEffect(() => {
         const windowSize = () => setWidth(window.innerWidth);
@@ -45,6 +32,7 @@ function Header() {
         <Container>
             {width > breakpoint ? (
                 <ul className="buttons-homepage">
+                    {/* <img alt="minha logo HFM que significa Henrique Ferreira Mendes" src={logo} className="hfm"/> */}
                     <Link to="/">
                         <li>Sobre</li>
                     </Link>
@@ -54,14 +42,31 @@ function Header() {
                     <Link to="/qualificacoes">
                         <li>Qualificações</li>
                     </Link>
+                    <span className="my-networks">
+                        <a
+                            href="https://github.com/hennixfer99"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            <img
+                                src={gh}
+                                alt="Acessar meus repositórios no GitHub"
+                            />
+                        </a>
 
-                    <button onClick={github}>
-                        <img src={gh} alt="github" />
-                    </button>
-
-                    <button onClick={linkedin}>
-                        <img src={lk} alt="linkedin" />
-                    </button>
+                        <a
+                            href="https://www.linkedin.com/in/henrique-ferreira-mendes-0012451b2/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            <img
+                                src={lk}
+                                alt="Acessar meu perfil profissional no LinkedIn"
+                            />
+                        </a>
+                    </span>
                 </ul>
             ) : (
                 <figure>
@@ -74,12 +79,7 @@ function Header() {
                 </figure>
             )}
 
-            <Menu
-                abrir={menuOpen}
-                sair={setMenuOpen}
-                link1={github}
-                link2={linkedin}
-            />
+            <Menu abrir={menuOpen} sair={setMenuOpen} />
         </Container>
     );
 }

@@ -25,15 +25,18 @@ const Container = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        max-width: 50%;
-        margin: 0 5px;
+        max-width: 45%;
+        /* margin: 0 5px 6rem 0; */
     }
     .me {
         display: flex;
         flex-direction: column;
+        height: 75%;
         justify-content: space-evenly;
-        margin: 35px 5px;
         text-align: center;
+    }
+    .me h2 {
+        margin: 0 0;
     }
     h2 {
         text-align: center;
@@ -91,9 +94,16 @@ const Container = styled.div`
         border-radius: 8px;
         border: 1px solid grey;
     }
+
     @media (max-width: 800px), (max-height: 855px) {
+        .first-block {
+            max-height: 16rem;
+        }
+        .aboutMe {
+            margin: 0px 5px;
+        }
         .tecnologies {
-            max-height: 6.5rem;
+            max-height: 7rem;
             flex-wrap: nowrap;
             overflow: auto;
             overflow-x: auto;
@@ -104,11 +114,14 @@ const Container = styled.div`
             height: 30px;
         }
     }
-    @media (max-width: 770px) {
+    @media (max-width: 770px), (max-height: 820px) {
         .modal {
+            display: flex;
+            flex-direction: column;
             padding: 0 3%;
             width: 80%;
-            justify-content: space-between;
+            justify-content: space-around;
+            height: 100vh;
         }
 
         .personal-img {
@@ -126,6 +139,8 @@ const Container = styled.div`
 
         .aboutMe {
             max-width: 100%;
+            padding: 0 15px;
+            text-align: justify;
         }
 
         h2 {
@@ -134,45 +149,27 @@ const Container = styled.div`
         p {
             font-size: 12px;
         }
-
-        .skills {
-            margin-top: 4rem;
-        }
         .tecnologies {
-            max-width: 82%;
+            max-width: 85%;
             margin: 0 auto;
         }
-    }
-    @media (max-width: 400px) and (min-height: 700px) {
-        .modal {
-            height: 90vh;
+        .skills {
+            margin-top: 10rem;
         }
+    }
+    @media (max-width: 450px) and (max-height: 850px) {
         .first-block {
-            margin-top: 2rem;
-        }
-        .skills {
-            margin-top: 7rem;
+            height: 15rem;
         }
         .tecnologies {
-            max-width: 90%;
+            max-width: 100%;
             margin: 0 auto;
-        }
-    }
-    @media (max-width: 400px) and (max-height: 690px) {
-        .modal {
-            height: 100vh;
-        }
-        .first-block {
-            margin-top: 2rem;
         }
         .skills {
-            margin-top: 7rem;
-        }
-        .tecnologies {
-            max-width: 90%;
-            margin: 0 auto;
+            margin-top: 20rem;
         }
     }
+   
 `;
 
 export default Container;

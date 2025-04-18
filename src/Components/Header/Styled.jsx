@@ -27,14 +27,24 @@ const Container = styled.div`
         cursor: pointer;
     }
 
-    button {
+    .my-networks {
+        display: inline-block;
+    }
+
+    a {
         background-color: transparent;
         border: none;
     }
-
-    button img {
+    a img {
         max-width: 60px;
         max-height: 32px;
+        cursor: pointer;
+    }
+    .hfm {
+        border: 1.5px solid #adb5bd;
+        border-radius: 8px;
+        width: 4rem;
+        height: 4rem;
         cursor: pointer;
     }
     .buttons-homepage {
@@ -52,9 +62,6 @@ const Container = styled.div`
     li {
         max-height: 100%;
         color: #495057;
-    }
-    p {
-        color: #4529e6;
     }
     .breakpoint {
         text-align: center;
