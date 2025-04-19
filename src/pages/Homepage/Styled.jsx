@@ -153,9 +153,6 @@ const Container = styled.div`
             max-width: 85%;
             margin: 0 auto;
         }
-        .skills {
-            margin-top: 10rem;
-        }
     }
     @media (max-width: 450px) and (max-height: 850px) {
         .first-block {
@@ -164,9 +161,6 @@ const Container = styled.div`
         .tecnologies {
             max-width: 100%;
             margin: 0 auto;
-        }
-        .skills {
-            margin-top: 20rem;
         }
     }
    
