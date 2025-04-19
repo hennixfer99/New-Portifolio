@@ -158,16 +158,16 @@ const Container = styled.div`
         }
     }
     @media (max-width: 450px) and (max-height: 850px) {
-        /* .first-block {
+        .first-block {
             height: 15rem;
-        } */
+        }
         .tecnologies {
             max-width: 100%;
             margin: 0 auto;
         }
-        /* .skills {
+        .skills {
             margin-top: 20rem;
-        } */
+        }
     }
    
 `;
