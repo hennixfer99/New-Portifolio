@@ -26,12 +26,11 @@ function NewModal({
             {modalOpen && (
                 <Container onClick={() => close()}>
                     <Modal
-                        onClick={(e) => e.stopPropagation()}
                         modalOpen={modalOpen}
                         closeButtonRef={modalCloseButtonRef}
                         primaryButtonRef={modalPrimaryButtonRef}
                         size="small"
-                        className="modal"
+                        className="active"
                     >
                         <header>
                             <h1>{title}</h1>
@@ -48,12 +47,10 @@ function NewModal({
                                         <button onClick={code}>
                                             Repositório
                                         </button>
-                                        {vercel ? (
+                                        {vercel && (
                                             <button onClick={vercel}>
                                                 Deploy
                                             </button>
-                                        ) : (
-                                            <></>
                                         )}
                                     </div>
                                 </div>

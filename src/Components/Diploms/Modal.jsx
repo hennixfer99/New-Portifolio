@@ -19,7 +19,10 @@ function DiplomModal({
     return (
         <>
             {modalOpen && (
-                <Container className={modalOpen ? "active" : null}>
+                <Container
+                    className={modalOpen ? "active" : null}
+                    onClick={() => close()}
+                >
                     <Modal
                         modalOpen={modalOpen}
                         closeButtonRef={modalCloseButtonRef}

@@ -5,7 +5,7 @@ import gh from "../../imgs/github.png";
 import lk from "../../imgs/linkedin.png";
 import logo from "../../imgs/logo.png";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -31,66 +31,98 @@ function Header() {
     return (
         <Container>
             {width > breakpoint ? (
-                <ul className="buttons-homepage">
-                    {/* <img alt="minha logo HFM que significa Henrique Ferreira Mendes" src={logo} className="hfm"/> */}
-                    <Link to="/">
-                        <li>Sobre</li>
-                    </Link>
-                    <Link to="/projetos">
-                        <li>Projetos</li>
-                    </Link>
-                    <Link to="/qualificacoes">
-                        <li>Qualificações</li>
-                    </Link>
-                    <span className="my-networks">
-                        <a
-                            href="https://github.com/hennixfer99"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => setMenuOpen(false)}
-                        >
+                <nav>
+                    <ul className="buttons-homepage">
+                        <li>
                             <img
-                                src={gh}
-                                alt="Acessar meus repositórios no GitHub"
+                                className="logoDesktop"
+                                alt="minha logo, caso queira retornar a página de sobre mim, pressione"
+                                src={logo}
+                                onClick={() => (window.location.href = "/")}
                             />
-                        </a>
+                        </li>
 
-                        <a
-                            href="https://www.linkedin.com/in/henrique-ferreira-mendes-0012451b2/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            <img
-                                src={lk}
-                                alt="Acessar meu perfil profissional no LinkedIn"
-                            />
-                        </a>
-                    </span>
-                </ul>
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : ""
+                                }
+                            >
+                                Sobre
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/projetos"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : ""
+                                }
+                            >
+                                Projetos
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/qualificacoes"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : ""
+                                }
+                            >
+                                Qualificações
+                            </NavLink>
+                        </li>
+
+                        <span className="my-networks">
+                            <a
+                                href="https://github.com/hennixfer99"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                <img
+                                    src={gh}
+                                    alt="Acessar meus repositórios no GitHub"
+                                />
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/henrique-ferreira-mendes-0012451b2/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                <img
+                                    src={lk}
+                                    alt="Acessar meu perfil profissional no LinkedIn"
+                                />
+                            </a>
+                        </span>
+                    </ul>
+                </nav>
             ) : (
-                <>
-                    <figure>
-                        <img
-                            className="menu"
-                            alt="logo"
-                            src={menu}
-                            onClick={menuAtivo}
-                        />
-                    </figure>
+                <nav>
+                    <img
+                        className="menu"
+                        alt="logo"
+                        src={menu}
+                        onClick={menuAtivo}
+                    />
 
                     <img
                         className="logo"
                         alt="minha logo, caso queira retornar a página de sobre mim, pressione"
                         src={logo}
-                        onClick={() => {setMenuOpen(false); window.location.href = "/";}}
+                        onClick={() => {
+                            setMenuOpen(false);
+                            window.location.href = "/";
+                        }}
                     />
-                </>
+                </nav>
             )}
 
             <Menu abrir={menuOpen} sair={setMenuOpen} />
         </Container>
     );
 }
-
 export default Header;

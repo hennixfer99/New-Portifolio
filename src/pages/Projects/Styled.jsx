@@ -31,8 +31,8 @@ const Container = styled.div`
         border-radius: 8px;
         max-width: 100%;
         width: 80vw;
-        height: 90vh;
-        margin: 1rem auto;
+        height: 80vh;
+        margin: 8rem auto 1rem auto;
         -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.63);
         display: flex;
@@ -45,6 +45,8 @@ const Container = styled.div`
             overflow-y: auto;
             padding: 0 3%;
             width: 80%;
+            height: 90vh;
+            margin: 4rem auto 1rem auto;
         }
     }
 `;

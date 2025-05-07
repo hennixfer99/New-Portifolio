@@ -10,7 +10,7 @@ const Container = styled.div`
         max-width: 100%;
         width: 80vw;
         height: 80vh;
-        margin: 1rem auto;
+        margin: 8rem auto 1rem auto;
         -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.63);
     }
@@ -98,12 +98,13 @@ const Container = styled.div`
             height: 30px;
         }
     }
-    @media (max-width: 770px), (max-height: 820px) {
+    @media (max-width: 770px), (max-height: 800px) {
         .modal {
             display: flex;
             flex-direction: column;
             padding: 0 3%;
             width: 80%;
+            margin-top: 3rem;
             justify-content: space-evenly;
             height: 100vh;
         }

@@ -2,6 +2,10 @@ body {
     background-color: #000;
 }
 
+.content{
+    margin-top: 10vh;
+}
+
 * {
         scrollbar-color: #bdb4dc transparent;
     }

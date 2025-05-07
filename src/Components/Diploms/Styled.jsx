@@ -4,14 +4,11 @@ const Container = styled.div`
     position: fixed;
     align-items: center;
     z-index: 20;
-    padding: 0;
     width: 100%;
-    padding-top: 5%;
-    margin-top: -2rem;
+    margin-top: -8rem;
+    padding-top: 8rem;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    transition: opacity, 1s;
 
     header {
         max-width: 90%;
@@ -67,7 +64,8 @@ const Container = styled.div`
         transition: opacity, 1s;
     }
 
-    &.active .modal, main{
+    &.active .modal,
+    main {
         opacity: 1;
         transition: opacity, 1s;
     }
@@ -81,10 +79,13 @@ const Modal = styled.div`
     z-index: 10;
     height: 55vh;
     border-radius: 8px;
-    overflow-y: scroll;    
+    overflow-y: scroll;
 
     @media (max-width: 725px) {
-        max-width: 80%;
+        h1 {
+            font-size: 20px;
+        }
+        max-width: 85%;
     }
 `;
 

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 10px 6px rgba(0, 0, 0, 0.63);
     background-color: #dee2e6;
@@ -12,19 +12,23 @@ const Container = styled.div`
     width: 100%;
     height: 8vh;
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        z-index: 1000;
+    }
+
     h1 {
         color: white;
         margin-left: 2%;
         font-size: 20px;
     }
-    .menu {
-        cursor: pointer;
-        max-width: 30px;
-    }
-    .logo {
+    .logoDesktop {
         width: 40px;
         height: 40px;
-        margin: 0 9%;
         cursor: pointer;
     }
 
@@ -32,11 +36,18 @@ const Container = styled.div`
         display: inline-block;
     }
 
-    a {
-        background-color: transparent;
-        border: none;
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding-bottom: 4px;
+        transition: border-bottom 0.2s;
     }
-    a img {
+
+    nav a.active {
+        border-bottom: 1px solid black;
+        font-weight: bold;
+    }
+    nav a img {
         max-width: 60px;
         max-height: 32px;
         cursor: pointer;
@@ -62,6 +73,21 @@ const Container = styled.div`
         align-items: center;
         padding: 4.5vh 25px 4.5vh 0;
         border-right: 1.5px solid #adb5bd;
+    }
+    @media (max-width: 700px) {
+        nav{
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .menu {
+            cursor: pointer;
+            max-width: 30px;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
     }
 `;
 export default Container;

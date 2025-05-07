@@ -5,7 +5,9 @@ function App() {
     return (
         <>
             <Header />
-            <Routes />
+            <main className="content">
+                <Routes />
+            </main>
         </>
     );
 }
