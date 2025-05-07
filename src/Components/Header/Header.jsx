@@ -69,14 +69,23 @@ function Header() {
                     </span>
                 </ul>
             ) : (
-                <figure>
+                <>
+                    <figure>
+                        <img
+                            className="menu"
+                            alt="logo"
+                            src={menu}
+                            onClick={menuAtivo}
+                        />
+                    </figure>
+
                     <img
-                        className="menu"
-                        alt="logo"
-                        src={menu}
-                        onClick={menuAtivo}
+                        className="logo"
+                        alt="minha logo, caso queira retornar a página de sobre mim, pressione"
+                        src={logo}
+                        onClick={() => {setMenuOpen(false); window.location.href = "/";}}
                     />
-                </figure>
+                </>
             )}
 
             <Menu abrir={menuOpen} sair={setMenuOpen} />

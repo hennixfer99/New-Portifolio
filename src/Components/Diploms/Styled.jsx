@@ -7,7 +7,7 @@ const Container = styled.div`
     padding: 0;
     width: 100%;
     padding-top: 5%;
-    margin-top: -1.5%;
+    margin-top: -2rem;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
@@ -70,16 +70,6 @@ const Container = styled.div`
     &.active .modal, main{
         opacity: 1;
         transition: opacity, 1s;
-    }
-
-    @media (max-width: 725px) {
-        margin-top: -4%;
-    }
-    @media (max-width: 550px) {
-        margin-top: -4.5%;
-    }
-    @media (max-width: 422px) {
-        margin-top: -5%;
     }
 `;
 const Modal = styled.div`

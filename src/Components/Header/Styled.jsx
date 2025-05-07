@@ -10,7 +10,7 @@ const Container = styled.div`
     background-color: #dee2e6;
     backdrop-filter: blur(5px);
     width: 100%;
-    height: 13vh;
+    height: 8vh;
 
     h1 {
         color: white;
@@ -21,9 +21,10 @@ const Container = styled.div`
         cursor: pointer;
         max-width: 30px;
     }
-    .logozinha {
-        max-width: 80%;
-        margin: 0 4%;
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin: 0 9%;
         cursor: pointer;
     }
 
@@ -38,13 +39,6 @@ const Container = styled.div`
     a img {
         max-width: 60px;
         max-height: 32px;
-        cursor: pointer;
-    }
-    .hfm {
-        border: 1.5px solid #adb5bd;
-        border-radius: 8px;
-        width: 4rem;
-        height: 4rem;
         cursor: pointer;
     }
     .buttons-homepage {

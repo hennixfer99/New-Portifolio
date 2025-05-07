@@ -10,7 +10,7 @@ const Container = styled.div`
         max-width: 100%;
         width: 80vw;
         height: 80vh;
-        margin: 1.5% auto;
+        margin: 1rem auto;
         -webkit-box-shadow: 0px 10px 6px 6px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.63);
     }
@@ -26,7 +26,6 @@ const Container = styled.div`
         flex-direction: column;
         justify-content: space-evenly;
         max-width: 45%;
-        /* margin: 0 5px 6rem 0; */
     }
     .me {
         display: flex;
@@ -82,23 +81,8 @@ const Container = styled.div`
         max-width: 50px;
         max-height: 50px;
     }
-    * {
-        scrollbar-color: #bdb4dc transparent;
-    }
-    *::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    *::-webkit-scrollbar-thumb {
-        background-color: #bdb4dc;
-        border-radius: 8px;
-        border: 1px solid grey;
-    }
-
+    
     @media (max-width: 800px), (max-height: 855px) {
-        .first-block {
-            max-height: 16rem;
-        }
         .aboutMe {
             margin: 0px 5px;
         }
@@ -120,7 +104,7 @@ const Container = styled.div`
             flex-direction: column;
             padding: 0 3%;
             width: 80%;
-            justify-content: space-around;
+            justify-content: space-evenly;
             height: 100vh;
         }
 
@@ -131,6 +115,7 @@ const Container = styled.div`
 
         .first-block {
             flex-direction: column-reverse;
+            max-height: 17rem;
         }
 
         .me {
@@ -158,9 +143,10 @@ const Container = styled.div`
         }
     }
     @media (max-width: 450px) and (max-height: 850px) {
-        .first-block {
-            height: 15rem;
+        .modal {
+            height: 120vh;
         }
+
         .tecnologies {
             max-width: 100%;
             margin: 0 auto;
@@ -169,7 +155,6 @@ const Container = styled.div`
             margin-top: 20rem;
         }
     }
-   
 `;
 
 export default Container;

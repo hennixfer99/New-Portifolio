@@ -6,23 +6,9 @@ const Container = styled.div`
     z-index: 1;
     padding: 0;
     width: 100%;
-    margin-top: -1.5%;
+    margin-top: -2rem;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-
-    * {
-        scrollbar-width: auto;
-        scrollbar-color: #bdb4dc transparent;
-    }
-    *::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    *::-webkit-scrollbar-thumb {
-        background-color: #bdb4dc;
-        border-radius: 8px;
-        border: 1px solid grey;
-    }
 `;
 const Modal = styled.div`
     margin: 7% auto;

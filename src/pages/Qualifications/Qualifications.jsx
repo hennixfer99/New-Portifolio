@@ -15,6 +15,37 @@ function Qualifications({ children }) {
     const [diplomImg, setDiplomImg] = useState("");
     const [description, setDescription] = useState("");
     const breakpoint = 725;
+    const diplomas = [
+        {
+            title: "Kenzie Front-End",
+            img: kenzieFront,
+            description:
+                "Diploma de conclusão de módulos Front-End da Kenzie Academy Brasil com duração de 1000 horas",
+        },
+        {
+            title: "Kenzie Full-stack",
+            img: kenzieFullStack,
+            description:
+                "Diploma de conclusão de curso da Kenzie Academy Brasil com duração de 2000 horas",
+        },
+        {
+            title: "Google AI Essentials",
+            img: googleAIEssentials,
+            description: "Diploma de conclusão de curso no Coursera",
+        },
+        {
+            title: "Cisco Network Defense certificate",
+            img: networkDefense,
+            description: "Diploma de conclusão do curso de redes e dados da Cisco"
+        }
+    ];
+
+    const handleOpenModal = (diploma) => {
+        setModalOpen(true);
+        setTitle(diploma.title);
+        setDiplomImg(diploma.img);
+        setDescription(diploma.description);
+    };
 
     useEffect(() => {
         const windowSize = () => setWidth(window.innerWidth);
@@ -60,47 +91,15 @@ function Qualifications({ children }) {
                         <div className="cards">
                             <h2>Diplomas adquiridos</h2>
 
-                            <button
-                                className="modalOpen"
-                                onClick={() => {
-                                    setModalOpen(true);
-                                    setTitle("Kenzie Front-End");
-                                    setDiplomImg(kenzieFront);
-                                    setDescription(
-                                        "Diploma de conclusão de módulos Front-End da Kenzie Academy Brasil com duração de 1000 horas"
-                                    );
-                                }}
-                            >
-                                Kenzie Front-End
-                            </button>
-
-                            <button
-                                className="modalOpen"
-                                onClick={() => {
-                                    setModalOpen(true);
-                                    setTitle("Kenzie Full-stack");
-                                    setDiplomImg(kenzieFullStack);
-                                    setDescription(
-                                        "Diploma de conclusão de curso da Kenzie Academy Brasil com duração de 2000 horas"
-                                    );
-                                }}
-                            >
-                                Kenzie Full-stack
-                            </button>
-
-                            <button
-                                className="modalOpen"
-                                onClick={() => {
-                                    setModalOpen(true);
-                                    setTitle("Google AI Essentials");
-                                    setDiplomImg(googleAIEssentials);
-                                    setDescription(
-                                        "Diploma de conclusão de curso no Coursera"
-                                    );
-                                }}
-                            >
-                                Google AI Essentials
-                            </button>
+                            {diplomas.map((diploma, index) => (
+                                <button
+                                    key={index}
+                                    className="modalOpen"
+                                    onClick={() => handleOpenModal(diploma)}
+                                >
+                                    {diploma.title}
+                                </button>
+                            ))}
                         </div>
                         <DiplomModal
                             title={title}

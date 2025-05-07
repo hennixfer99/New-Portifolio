@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
     position: fixed;
-    max-width: 350px;
+    max-width: 300px;
     height: 0;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@ const Container = styled.div`
     }
     header {
         background-color: #dee2e6;
-        height: 13vh;
+        height: 8vh;
         display: flex;
         align-items: center;
         justify-content: start;
