@@ -126,7 +126,7 @@ const Container = styled.div`
         .aboutMe {
             max-width: 100%;
             padding: 0 15px;
-            text-align: justify;
+            text-align: left;
         }
 
         h2 {
