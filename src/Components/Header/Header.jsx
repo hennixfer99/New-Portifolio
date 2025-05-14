@@ -10,6 +10,10 @@ import { NavLink } from "react-router-dom";
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [width, setWidth] = useState(window.innerWidth);
+    const [sobreActive, setSobreActive] = useState("");
+    const [projectsActive, setProjectsActive] = useState("");
+    const [diplomsActive, setDiplomsActive] = useState("");
+    const [contactActive, setContactActive] = useState("");
     const breakpoint = 600;
 
     function menuAtivo() {
@@ -35,19 +39,23 @@ function Header() {
                     <ul className="buttons-homepage">
                         <li>
                             <img
-                                className="logoDesktop"
+                                className="logo"
                                 alt="minha logo, caso queira retornar a página de sobre mim, pressione"
                                 src={logo}
-                                onClick={() => (window.location.href = "/")}
+                                onClick={() => (window.location.href = "/sobre")}
                             />
                         </li>
 
                         <li>
                             <NavLink
-                                to="/"
-                                className={({ isActive }) =>
-                                    isActive ? "active" : ""
-                                }
+                                to="/sobre"
+                                className={sobreActive}
+                                onClick={() => {
+                                    setSobreActive("active");
+                                    setProjectsActive("");
+                                    setDiplomsActive("");
+                                    setContactActive("");
+                                }}
                             >
                                 Sobre
                             </NavLink>
@@ -55,9 +63,13 @@ function Header() {
                         <li>
                             <NavLink
                                 to="/projetos"
-                                className={({ isActive }) =>
-                                    isActive ? "active" : ""
-                                }
+                                className={projectsActive}
+                                onClick={() => {
+                                    setSobreActive("");
+                                    setProjectsActive("active");
+                                    setDiplomsActive("");
+                                    setContactActive("");
+                                }}
                             >
                                 Projetos
                             </NavLink>
@@ -65,9 +77,13 @@ function Header() {
                         <li>
                             <NavLink
                                 to="/qualificacoes"
-                                className={({ isActive }) =>
-                                    isActive ? "active" : ""
-                                }
+                                className={diplomsActive}
+                                onClick={() => {
+                                    setSobreActive("");
+                                    setProjectsActive("");
+                                    setDiplomsActive("active");
+                                    setContactActive("");
+                                }}
                             >
                                 Qualificações
                             </NavLink>
@@ -115,7 +131,7 @@ function Header() {
                         src={logo}
                         onClick={() => {
                             setMenuOpen(false);
-                            window.location.href = "/";
+                            window.location.href = "/sobre";
                         }}
                     />
                 </nav>

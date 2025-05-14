@@ -8,17 +8,17 @@ function Routes() {
     return (
         <>
             <Switch>
-                <Route exact path="/">
+                <Route path="/sobre">
                     <Homepage />
                 </Route>
             </Switch>
             <Switch>
-                <Route exact path="/projetos">
+                <Route path="/projetos">
                     <Projects />
                 </Route>
             </Switch>
             <Switch>
-                <Route exact path="/qualificacoes">
+                <Route path="/qualificacoes">
                     <Qualifications />
                 </Route>
             </Switch>

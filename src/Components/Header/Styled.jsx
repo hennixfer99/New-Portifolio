@@ -26,9 +26,11 @@ const Container = styled.div`
         margin-left: 2%;
         font-size: 20px;
     }
-    .logoDesktop {
-        width: 40px;
+    .logo {
+        width: 45px;
         height: 40px;
+        border: 1px solid black;
+        border-radius:12px;
         cursor: pointer;
     }
 
@@ -82,11 +84,6 @@ const Container = styled.div`
         .menu {
             cursor: pointer;
             max-width: 30px;
-        }
-        .logo {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
         }
     }
 `;

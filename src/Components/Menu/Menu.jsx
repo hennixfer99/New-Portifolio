@@ -16,7 +16,7 @@ function Menu({ abrir, sair }) {
                     </button>
                 </header>
                 <main>
-                    <Link to="/" onClick={() => sair(false)}>
+                    <Link to="/sobre" onClick={() => sair(false)}>
                         <li>Sobre</li>
                     </Link>
                     <Link to="/projetos" onClick={() => sair(false)}>
