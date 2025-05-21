@@ -1,6 +1,6 @@
 import Container from "./Styled";
 import Particle from "../../Components/Particles/Particles";
-import Carousel, { CarouselItem } from "../../Components/Carousel/Carousel";
+import Carousel from "../../Components/Carousel/Carousel";
 import React, { useEffect, useState } from "react";
 import kenzieFront from "../../imgs/kenzie1.png";
 import kenzieFullStack from "../../imgs/kenzieFullStack.png";
@@ -36,8 +36,30 @@ function Qualifications({ children }) {
         {
             title: "Cisco Network Defense certificate",
             img: networkDefense,
-            description: "Diploma de conclusão do curso de redes e dados da Cisco"
-        }
+            description:
+                "Diploma de conclusão do curso de redes e dados da Cisco",
+        },
+    ];
+    const images = [
+        {
+            img: kenzieFront,
+            description:
+                "Diploma de conclusão de módulos Front-End da Kenzie Academy Brasil com duração de 1000 horas",
+        },
+        {
+            img: kenzieFullStack,
+            description:
+                "Diploma de conclusão de curso da Kenzie Academy Brasil com duração de 2000 horas",
+        },
+        {
+            img: googleAIEssentials,
+            description: "Diploma de conclusão de curso no Coursera",
+        },
+        {
+            img: networkDefense,
+            description:
+                "Diploma de conclusão do curso de redes e dados da Cisco",
+        },
     ];
 
     const handleOpenModal = (diploma) => {
@@ -60,32 +82,7 @@ function Qualifications({ children }) {
             <Particle />
             <div className="Modal">
                 {width > breakpoint ? (
-                    <Carousel>
-                        <CarouselItem>
-                            <img
-                                alt="Kenzie Academy Brasil front-end certificate"
-                                src={kenzieFront}
-                            />
-                        </CarouselItem>
-                        <CarouselItem>
-                            <img
-                                alt="Kenzie Academy Brasil full-stack certificate"
-                                src={kenzieFullStack}
-                            />
-                        </CarouselItem>
-                        <CarouselItem>
-                            <img
-                                alt="Google AI Essentials certificate"
-                                src={googleAIEssentials}
-                            />
-                        </CarouselItem>
-                        <CarouselItem>
-                            <img
-                                alt="Cisco Network Defense certificate"
-                                src={networkDefense}
-                            />
-                        </CarouselItem>
-                    </Carousel>
+                    <Carousel images={images} />
                 ) : (
                     <>
                         <div className="cards">

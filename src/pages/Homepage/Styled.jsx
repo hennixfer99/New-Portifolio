@@ -81,7 +81,7 @@ const Container = styled.div`
         max-width: 50px;
         max-height: 50px;
     }
-    
+
     @media (max-width: 800px), (max-height: 855px) {
         .aboutMe {
             margin: 0px 5px;
@@ -116,7 +116,7 @@ const Container = styled.div`
 
         .first-block {
             flex-direction: column-reverse;
-            max-height: 17rem;
+            height: 40rem;
         }
 
         .me {
@@ -126,7 +126,6 @@ const Container = styled.div`
         .aboutMe {
             max-width: 100%;
             padding: 0 15px;
-            text-align: left;
         }
 
         h2 {
@@ -145,7 +144,7 @@ const Container = styled.div`
     }
     @media (max-width: 450px) and (max-height: 850px) {
         .modal {
-            height: 120vh;
+            height: 140vh;
         }
 
         .tecnologies {
@@ -153,7 +152,7 @@ const Container = styled.div`
             margin: 0 auto;
         }
         .skills {
-            margin-top: 20rem;
+            margin-top: 0rem;
         }
     }
 `;

@@ -16,7 +16,6 @@ const Container = styled.div`
         border-radius: 8px;
         height: 77vh;
     }
-
     .indicators {
         display: flex;
         justify-content: space-between;
@@ -38,6 +37,10 @@ const Container = styled.div`
         color: white;
         border: 0.5px solid #494b4c;
         background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel {
+        background-color: red;
     }
 `;
 export default Container;
