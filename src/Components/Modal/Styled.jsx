@@ -14,7 +14,7 @@ const Container = styled.div`
 const Modal = styled.div`
     margin: 7% auto;
     background-color: #dee2e6;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     max-width: 530px;
     padding: 0;
     z-index: 10;
@@ -40,13 +40,13 @@ const Modal = styled.div`
     }
 
     header h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     header button {
         border: none;
         background-color: transparent;
-        font-size: 25px;
+        font-size: 1.56rem;
         color: grey;
         cursor: pointer;
     }
@@ -72,20 +72,20 @@ const Modal = styled.div`
 
     main h2 {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     main p {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     main button {
-        color: black;
+        color: var(--black);
         background-color: rgba(0, 0, 0, 0.11);
         height: 32px;
         padding: 0 20px;
-        border: 1px solid black;
+        border: 1px solid var(--black);
         border-radius: 4px;
         cursor: pointer;
     }
@@ -103,7 +103,7 @@ const Modal = styled.div`
 
     @media (max-width: 725px) {
         h1 {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         max-width: 85%;
     }

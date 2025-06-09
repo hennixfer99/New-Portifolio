@@ -19,13 +19,13 @@ const Container = styled.div`
     }
 
     header h2 {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     header button {
         border: none;
         background-color: transparent;
-        font-size: 25px;
+        font-size: 1.56rem;
         color: grey;
         cursor: pointer;
     }
@@ -44,7 +44,7 @@ const Container = styled.div`
 
     main h2 {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
     }
     main img {
         max-height: 19vh;
@@ -73,7 +73,7 @@ const Container = styled.div`
 const Modal = styled.div`
     margin: 7% auto;
     background-color: #dee2e6;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     max-width: 530px;
     padding: 0 0;
     z-index: 10;
@@ -82,9 +82,6 @@ const Modal = styled.div`
     overflow-y: scroll;
 
     @media (max-width: 725px) {
-        h1 {
-            font-size: 20px;
-        }
         max-width: 85%;
     }
 `;

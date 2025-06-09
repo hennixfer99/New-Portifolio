@@ -1,46 +1,33 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    position: relative;
-    overflow: hidden;
-    z-index: 5;
-    .inner {
-        white-space: nowrap;
-        border-radius: 8px;
-        transition: transform 0.3s;
-    }
-    .carousel-item {
-        display: inline-flex;
+    .embla {
+        overflow: hidden;
+        border: 1px solid var(--black);
         align-items: center;
-        justify-content: center;
         border-radius: 8px;
-        height: 77vh;
+        width: 80vw;
+        height: 80vh;
     }
-    .indicators {
+    .embla__container {
         display: flex;
-        justify-content: space-between;
-        margin: 0 20px;
+        height: 80vh;
     }
-    .indicators > button {
-        padding: 0 15px;
-        background-color: transparent;
-        border: 0.3px solid #a4a7aa;
-        border-radius: 8px;
-        cursor: pointer;
+    .embla__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        flex: 0 0 100%;
+        min-width: 0;
     }
-    .indicators > button.active {
-        color: white;
-        border: 0.5px solid #494b4c;
-        background-color: rgba(0, 0, 0, 0.3);
+    img {
+        max-width: 50%;
     }
-    button:hover {
-        color: white;
-        border: 0.5px solid #494b4c;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .carousel {
-        background-color: red;
+    p {
+        text-align: center;
+        margin: 2% 35% 0 35%;
+        font-size: 1.1rem;
     }
 `;
 export default Container;

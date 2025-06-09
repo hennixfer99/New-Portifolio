@@ -14,7 +14,7 @@ function Header() {
     const [projectsActive, setProjectsActive] = useState("");
     const [diplomsActive, setDiplomsActive] = useState("");
     const [contactActive, setContactActive] = useState("");
-    const breakpoint = 600;
+    const breakpoint = 700;
 
     function menuAtivo() {
         if (menuOpen === true) {

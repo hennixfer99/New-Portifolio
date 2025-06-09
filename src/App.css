@@ -1,5 +1,11 @@
+:root{
+    --modal-background: rgba(222, 226, 230, 0.9);
+    --header-color: #DEE2E6;
+    --black: #000;
+    --white: #fff;
+}
 body {
-    background-color: #000;
+    background-color: var(--black);
 }
 
 .content{

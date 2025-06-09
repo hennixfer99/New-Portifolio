@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
     .Modal {
-        background-color: rgba(222, 226, 230, 0.9);
-        border-radius: 8px;
+        background-color: var(--modal-background);
         max-width: 100%;
+        border-radius: 8px;
         width: 80vw;
         height: 80vh;
         margin: 8rem auto 1rem auto;
@@ -38,7 +38,7 @@ const Container = styled.div`
         .cards button {
             padding: 15px 0;
             border: 0.3px solid #a4a7aa;
-            color: #000;
+            color: var(--black);
             background: transparent;
             border-radius: 8px;
         }

@@ -7,7 +7,7 @@ const Container = styled.div`
         cursor: pointer;
         margin: 10px 0;
         padding: 15px;
-        color: #000;
+        color: var(--black);
         border: 0.5px solid #a4a7aa;
         background-color: transparent;
         border-radius: 8px;
@@ -27,7 +27,7 @@ const Container = styled.div`
     }
 
     .Modal {
-        background-color: rgba(222, 226, 230, 0.9);
+        background-color: var(--modal-background);
         border-radius: 8px;
         max-width: 100%;
         width: 80vw;

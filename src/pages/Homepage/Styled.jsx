@@ -5,7 +5,7 @@ const Container = styled.div`
     max-height: 100%;
     box-sizing: border-box;
     .modal {
-        background-color: rgba(222, 226, 230, 0.9);
+        background-color: var(--modal-background);
         border-radius: 8px;
         max-width: 100%;
         width: 80vw;
@@ -39,15 +39,15 @@ const Container = styled.div`
     }
     h2 {
         text-align: center;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .aboutMe p {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .personal-img {
         background-color: grey;
-        border: 1px solid black;
+        border: 1px solid var(--black);
         border-radius: 20px;
         width: 205px;
         height: 215px;
@@ -69,7 +69,7 @@ const Container = styled.div`
         padding: 5px 5px;
         text-align: center;
         text-decoration: none;
-        color: #000;
+        color: var(--black);
     }
 
     .tecnologies a:hover {
@@ -129,19 +129,23 @@ const Container = styled.div`
         }
 
         h2 {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         p {
-            font-size: 12px;
+            font-size: 0.75rem;
         }
         .tecnologies {
             max-width: 85%;
             margin: 0 auto;
         }
+    }
+
+    @media (max-width: 770px) {
         .skills {
-            margin-top: 10rem;
+            margin-top: 5rem;
         }
     }
+
     @media (max-width: 450px) and (max-height: 850px) {
         .modal {
             height: 140vh;

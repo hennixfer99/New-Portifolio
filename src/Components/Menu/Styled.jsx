@@ -31,9 +31,9 @@ const Container = styled.div`
         padding: 0 20px 32px 20px;
         background-color: #dee2e6;
         border-radius: 8px;
-        font-size: 25px;
+        font-size: 1.56rem;
         height: 20px;
-        color: black;
+        color: var(--black);
         border: none;
         cursor: pointer;
         opacity: 0;
@@ -55,24 +55,18 @@ const Container = styled.div`
         margin-bottom: 20px;
     }
     a {
-        background-color: transparent;
-        border: none;
-        margin-left: 15px;
-    }
-    a {
-        text-decoration: none;
-        width: 100%;
+        margin-left: 20px;
     }
     li {
         height: 40px;
-        margin-top: 40px;
-        margin-left: 35px;
+        margin: 20px 35px;
         cursor: pointer;
         text-align: start;
         list-style: none;
         opacity: 0;
         font-weight: 600;
         color: #495057;
+        font-size: 1.3rem;
     }
     &.active {
         height: 600px;
