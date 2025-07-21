@@ -27,7 +27,7 @@ function Homepage() {
             <div className="modal">
                 <div className="first-block">
                     <section className="aboutMe">
-                        <h2>Sobre mim</h2>
+                        <h2>Sobre mim </h2>
                         <p>
                             Sou Desenvolvedor Web Full Stack, formado pela
                             Kenzie Academy Brasil e atualmente cursando Ciência
