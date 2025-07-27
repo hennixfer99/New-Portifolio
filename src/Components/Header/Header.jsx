@@ -42,7 +42,9 @@ function Header() {
                                 className="logo"
                                 alt="minha logo, caso queira retornar a página de sobre mim, pressione"
                                 src={logo}
-                                onClick={() => (window.location.href = "/sobre")}
+                                onClick={() =>
+                                    (window.location.href = "/sobre")
+                                }
                             />
                         </li>
 
@@ -88,6 +90,20 @@ function Header() {
                                 Qualificações
                             </NavLink>
                         </li>
+                        {/* <li>
+                            <NavLink
+                                to="/contato"
+                                className={contactActive}
+                                onClick={() => {
+                                    setSobreActive("");
+                                    setProjectsActive("");
+                                    setDiplomsActive("");
+                                    setContactActive("active");
+                                }}
+                            >
+                                Contato
+                            </NavLink>
+                        </li> */}
 
                         <span className="my-networks">
                             <a

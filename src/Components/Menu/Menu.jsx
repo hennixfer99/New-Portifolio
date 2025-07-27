@@ -5,16 +5,19 @@ import lk from "../../imgs/linkedin.png";
 
 function Menu({ abrir, sair }) {
     return (
-        <Container className={abrir ? "active" : null}>
-            <div className="menu-animation">
-                <header>
-                    <button
-                        className="buttonreturn"
-                        onClick={() => sair(false)}
-                    >
-                        X
-                    </button>
-                </header>
+        <Container
+            className={abrir ? "active" : null}
+            onClick={() => sair(false)}
+        >
+            <header onClick={(e) => e.stopPropagation()}>
+                <button className="buttonreturn" onClick={() => sair(false)}>
+                    X
+                </button>
+            </header>
+            <div
+                className="menu-animation"
+                onClick={(e) => e.stopPropagation()}
+            >
                 <main>
                     <Link to="/sobre" onClick={() => sair(false)}>
                         <li>Sobre</li>
@@ -25,6 +28,9 @@ function Menu({ abrir, sair }) {
                     <Link to="/qualificacoes" onClick={() => sair(false)}>
                         <li>Qualificações</li>
                     </Link>
+                    {/* <Link to="/contato" onClick={() => sair(false)}>
+                        <li>Contato</li>
+                    </Link> */}
                     <a
                         href="https://github.com/hennixfer99"
                         target="_blank"

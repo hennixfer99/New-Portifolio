@@ -29,6 +29,7 @@ function DiplomModal({
                         primaryButtonRef={modalPrimaryButtonRef}
                         size="small"
                         className="modal"
+                        onClick={(e) => e.stopPropagation()}
                     >
                         <header>
                             <h2>{title}</h2>

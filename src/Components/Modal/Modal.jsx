@@ -31,6 +31,7 @@ function NewModal({
                         primaryButtonRef={modalPrimaryButtonRef}
                         size="small"
                         className="active"
+                        onClick={(e) => e.stopPropagation()}
                     >
                         <header>
                             <h1>{title}</h1>

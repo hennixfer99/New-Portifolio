@@ -2,21 +2,31 @@ import styled from "styled-components";
 
 const Container = styled.div`
     position: fixed;
-    max-width: 300px;
     height: 0;
     top: 0;
     left: 0;
     overflow: hidden;
     width: 100%;
     background-color: transparent;
-    transition: height 1s;
-    z-index: 1050;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 0.5s ease;
+
+    &.active {
+        opacity: 1;
+        transform: scale(1);
+        height: 110vh;
+    }
+
     menu::-webkit-scrollbar {
         width: 0px;
     }
     .menu-animation {
         z-index: 1050;
-        max-height: 100%;
+        max-width: 300px;
     }
     header {
         background-color: #dee2e6;
@@ -25,6 +35,7 @@ const Container = styled.div`
         align-items: center;
         justify-content: start;
         padding-left: 15px;
+        width: 100%;
     }
     .buttonreturn {
         text-align: center;
@@ -46,8 +57,7 @@ const Container = styled.div`
         backdrop-filter: blur(5px);
         z-index: 1;
         border-radius: 0 0 8px 8px;
-        opacity: 0;
-        transition: opacity, 1s;
+        opacity: 1;
     }
     img {
         max-width: 60px;
@@ -68,24 +78,12 @@ const Container = styled.div`
         color: #495057;
         font-size: 1.3rem;
     }
-    &.active {
-        height: 600px;
-    }
-    &.active main {
-        opacity: 1;
-        transition: opacity, 1s;
-    }
-    &.active .menu-animation {
-        z-index: 1050;
-    }
     &.active li,
-    &.active button {
-        opacity: 1;
-        transition: opacity, 0.5s;
-    }
+    &.active button,
+    &.active main,
+    &.active .menu-animation,
     &.active button p {
         opacity: 1;
-        transition: opacity, 0.2s;
     }
 `;
 
