@@ -8,7 +8,7 @@ const Container = styled.div`
     overflow: hidden;
     width: 100%;
     background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--overlay-strong);
     backdrop-filter: blur(5px);
 
     opacity: 0;
@@ -29,7 +29,7 @@ const Container = styled.div`
         max-width: 300px;
     }
     header {
-        background-color: #dee2e6;
+        background-color: var(--surface);
         height: 8vh;
         display: flex;
         align-items: center;
@@ -40,7 +40,7 @@ const Container = styled.div`
     .buttonreturn {
         text-align: center;
         padding: 0 20px 32px 20px;
-        background-color: #dee2e6;
+        background-color: var(--surface);
         border-radius: 8px;
         font-size: 1.56rem;
         height: 20px;
@@ -52,8 +52,8 @@ const Container = styled.div`
     }
 
     main {
-        border: 1.5px solid #adb5bd;
-        background-color: #dee2e6;
+        border: 1.5px solid var(--border-soft);
+        background-color: var(--surface);
         backdrop-filter: blur(5px);
         z-index: 1;
         border-radius: 0 0 8px 8px;
@@ -75,7 +75,7 @@ const Container = styled.div`
         list-style: none;
         opacity: 0;
         font-weight: 600;
-        color: #495057;
+        color: var(--text-muted);
         font-size: 1.3rem;
     }
     &.active li,

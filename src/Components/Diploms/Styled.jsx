@@ -8,7 +8,7 @@ const Container = styled.div`
     margin-top: -8rem;
     padding-top: 8rem;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--overlay);
 
     header {
         max-width: 90%;
@@ -26,7 +26,7 @@ const Container = styled.div`
         border: none;
         background-color: transparent;
         font-size: 1.56rem;
-        color: grey;
+        color: var(--text-muted);
         cursor: pointer;
     }
 
@@ -72,7 +72,7 @@ const Container = styled.div`
 `;
 const Modal = styled.div`
     margin: 7% auto;
-    background-color: #dee2e6;
+    background-color: var(--modal-background);
     border: 1px solid var(--black);
     max-width: 530px;
     padding: 0 0;

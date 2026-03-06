@@ -8,12 +8,12 @@ const Container = styled.div`
     margin-top: -8rem;
     padding-top: 8rem;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--overlay);
 `;
 
 const Modal = styled.div`
     margin: 7% auto;
-    background-color: #dee2e6;
+    background-color: var(--modal-background);
     border: 1px solid var(--black);
     max-width: 530px;
     padding: 0;
@@ -24,7 +24,9 @@ const Modal = styled.div`
 
     opacity: 0;
     transform: scale(0.95);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
 
     &.active {
         opacity: 1;
@@ -47,7 +49,7 @@ const Modal = styled.div`
         border: none;
         background-color: transparent;
         font-size: 1.56rem;
-        color: grey;
+        color: var(--text-muted);
         cursor: pointer;
     }
 
@@ -81,13 +83,19 @@ const Modal = styled.div`
     }
 
     main button {
-        color: var(--black);
-        background-color: rgba(0, 0, 0, 0.11);
-        height: 32px;
-        padding: 0 20px;
-        border: 1px solid var(--black);
-        border-radius: 4px;
+        background-color: transparent;
+        border-radius: 8px;
         cursor: pointer;
+        margin: 10px 0;
+        padding: 15px;
+        color: var(--black);
+        border: 0.5px solid var(--border-soft);
+    }
+
+    main button:hover {
+        color: var(--hover-text);
+        border: 0.5px solid var(--hover-border);
+        background-color: var(--hover-background);
     }
 
     .square2 {

@@ -8,6 +8,8 @@ import torre from "../../imgs/torre.png";
 import pokemonShop from "../../imgs/pokemonShop.png";
 import recikle from "../../imgs/recikle.png";
 import komercio from "../../imgs/komercio.png";
+import routerBrasil from "../../imgs/routerBrasil.png";
+import neverline from "../../imgs/neverline.png";
 
 function Projects() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -21,6 +23,8 @@ function Projects() {
         "https://github.com/hennixfer99/M3-ProjetoCapstone--Alex-Grupo3",
         "https://github.com/vitorschmidt/Recikle",
         "https://github.com/Kenzie-Academy-Brasil-Developers/m5-sprint5-komercio-hennixfer99",
+        "https://github.com/hennixfer99/RouterBrasil",
+        "https://github.com/hennixfer99/Neverline-1.0",
     ];
 
     const deploys = [
@@ -30,6 +34,7 @@ function Projects() {
         "https://m3-projeto-capstone-alex-grupo3-paulo-david.vercel.app",
         "https://recikle-projeto.herokuapp.com/api/",
         "https://komercio-generic-view-henrique.herokuapp.com/api/",
+        "https://hennixfer99.github.io/RouterBrasil/",
     ];
 
     function abrirLink(tipo, index) {
@@ -64,6 +69,12 @@ function Projects() {
                     <button className="modalOpen" onClick={() => modalName(4)}>
                         My Plant
                     </button>
+                    <button className="modalOpen" onClick={() => modalName(7)}>
+                        Router Brasil
+                    </button>
+                    <button className="modalOpen" onClick={() => modalName(8)}>
+                        Neverline 1.0
+                    </button>
                 </div>
                 <div className="cards">
                     <h2>Projetos de Back-end</h2>
@@ -75,7 +86,7 @@ function Projects() {
                     </button>
                 </div>
 
-                {projectNumber === 1 ? (
+                {projectNumber === 1 && (
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
@@ -91,11 +102,9 @@ function Projects() {
                         code={() => abrirLink("repo", 0)}
                         alt={"Projeto Kenzie hub"}
                     />
-                ) : (
-                    <></>
                 )}
 
-                {projectNumber === 2 ? (
+                {projectNumber === 2 && (
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
@@ -111,10 +120,9 @@ function Projects() {
                         code={() => abrirLink("repo", 1)}
                         alt={"Projeto Pokemon Shop"}
                     />
-                ) : (
-                    <></>
                 )}
-                {projectNumber === 3 ? (
+
+                {projectNumber === 3 && (
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
@@ -128,10 +136,9 @@ function Projects() {
                         code={() => abrirLink("repo", 2)}
                         alt={"Projeto Torre de Hanoi"}
                     />
-                ) : (
-                    <></>
                 )}
-                {projectNumber === 4 ? (
+
+                {projectNumber === 4 && (
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
@@ -147,10 +154,8 @@ function Projects() {
                         code={() => abrirLink("repo", 3)}
                         alt={"Projeto My plant"}
                     />
-                ) : (
-                    <></>
                 )}
-                {projectNumber === 5 ? (
+                {projectNumber === 5 && (
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
@@ -166,10 +171,9 @@ function Projects() {
                         code={() => abrirLink("repo", 4)}
                         alt={"Projeto Recikle"}
                     />
-                ) : (
-                    <></>
                 )}
-                {projectNumber === 6 ? (
+
+                {projectNumber === 6 && (
                     <NewModal
                         setModalOpen={setModalOpen}
                         modalOpen={modalOpen}
@@ -183,8 +187,34 @@ function Projects() {
                         code={() => abrirLink("repo", 5)}
                         alt={"Projeto Komercio"}
                     />
-                ) : (
-                    <></>
+                )}
+                {projectNumber === 7 && (
+                    <NewModal
+                        setModalOpen={setModalOpen}
+                        modalOpen={modalOpen}
+                        title="Router Brasil"
+                        description="Projeto no estilo autoral para empresa Router Brasil, desenvolvido com o objetivo de fazer um site mais acessivel e responsivo, utilizando HTML, CSS e JavaScript puros."
+                        tecnologies="HTML, CSS e JavaScript"
+                        setProjectNumber={setProjectNumber}
+                        img={routerBrasil}
+                        vercel={() => abrirLink("deploy", 7)}
+                        code={() => abrirLink("repo", 7)}
+                        alt={"Projeto Router Brasil"}
+                    />
+                )}
+                {projectNumber === 8 && (
+                    <NewModal
+                        setModalOpen={setModalOpen}
+                        modalOpen={modalOpen}
+                        title="Neverline"
+                        description="Projeto autoral desenvolvido com o objetivo de automatizar as lições de inglês, criando um bot que visa fazer as lições propostas, utilizando PLAYWRIGHT, JavaScript, Node.js e Express."
+                        tecnologies="PLAYWRIGHT, JavaScript, Node.js e Express"
+                        setProjectNumber={setProjectNumber}
+                        img={neverline}
+                        // vercel={() => abrirLink("deploy", 8)}   
+                        code={() => abrirLink("repo", 8)}
+                        alt={"Projeto Neverline"}
+                    />
                 )}
             </div>
         </Container>

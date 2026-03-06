@@ -46,7 +46,7 @@ const Container = styled.div`
     }
 
     .personal-img {
-        background-color: grey;
+        background-color: var(--avatar-background);
         border: 1px solid var(--black);
         border-radius: 20px;
         width: 205px;

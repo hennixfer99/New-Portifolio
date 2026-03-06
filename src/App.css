@@ -1,26 +1,78 @@
-:root{
+:root {
     --modal-background: rgba(222, 226, 230, 0.9);
-    --header-color: #DEE2E6;
+    --header-color: #dee2e6;
+    --surface: #dee2e6;
     --black: #000;
     --white: #fff;
-}
-body {
-    background-color: var(--black);
+    --text-muted: #495057;
+    --page-background: #000;
+    --overlay: rgba(0, 0, 0, 0.4);
+    --overlay-strong: rgba(0, 0, 0, 0.7);
+    --border-strong: #000;
+    --border-soft: #a4a7aa;
+    --hover-text: #fff;
+    --hover-border: #494b4c;
+    --hover-background: rgba(0, 0, 0, 0.3);
+    --avatar-background: #8b8f93;
+    --scrollbar-thumb: #bdb4dc;
+    --scrollbar-border: grey;
 }
 
-.content{
+:root[data-theme="dark"] {
+    --modal-background: rgba(48, 53, 60, 0.92);
+    --header-color: #2b3036;
+    --surface: #2f353c;
+    --black: #e9ecef;
+    --white: #fff;
+    --text-muted: #c0c7ce;
+    --page-background: #1d2126;
+    --overlay: rgba(0, 0, 0, 0.55);
+    --overlay-strong: rgba(0, 0, 0, 0.78);
+    --border-strong: #9098a2;
+    --border-soft: #7a838d;
+    --hover-text: #fff;
+    --hover-border: #b4bcc4;
+    --hover-background: rgba(255, 255, 255, 0.12);
+    --avatar-background: #4e5660;
+    --scrollbar-thumb: #7f8a95;
+    --scrollbar-border: #3f4650;
+}
+
+body {
+    background-color: var(--page-background);
+    color: var(--black);
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+:root.theme-transition *,
+:root.theme-transition *::before,
+:root.theme-transition *::after {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        fill 0.35s ease,
+        stroke 0.35s ease;
+}
+
+.content {
     margin-top: 10vh;
 }
 
 * {
-        scrollbar-color: #bdb4dc transparent;
-    }
-    *::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    *::-webkit-scrollbar-thumb {
-        background-color: #bdb4dc;
-        border-radius: 8px;
-        border: 1px solid grey;
-    }
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 8px;
+    border: 1px solid var(--scrollbar-border);
+}

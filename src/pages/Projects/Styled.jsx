@@ -8,15 +8,15 @@ const Container = styled.div`
         margin: 10px 0;
         padding: 15px;
         color: var(--black);
-        border: 0.5px solid #a4a7aa;
+        border: 0.5px solid var(--border-soft);
         background-color: transparent;
         border-radius: 8px;
     }
 
     .cards button:hover {
-        color: white;
-        border: 0.5px solid #494b4c;
-        background-color: rgba(0, 0, 0, 0.3);
+        color: var(--hover-text);
+        border: 0.5px solid var(--hover-border);
+        background-color: var(--hover-background);
     }
 
     .cards {
