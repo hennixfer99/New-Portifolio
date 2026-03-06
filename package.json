@@ -10,7 +10,6 @@
         "@testing-library/react": "^13.0.0",
         "@testing-library/user-event": "^13.2.1",
         "embla-carousel-react": "^8.6.0",
-        "node": "^20.18.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-particles": "^2.5.3",
@@ -20,6 +19,9 @@
         "styled-components": "^5.3.6",
         "tsparticles": "^2.5.3",
         "web-vitals": "^2.1.0"
+    },
+    "engines": {
+        "node": ">=20 <21"
     },
     "scripts": {
         "start": "react-scripts start",

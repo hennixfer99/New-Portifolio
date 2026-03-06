@@ -13,7 +13,6 @@ function Header() {
     const [sobreActive, setSobreActive] = useState("");
     const [projectsActive, setProjectsActive] = useState("");
     const [diplomsActive, setDiplomsActive] = useState("");
-    const [contactActive, setContactActive] = useState("");
     const breakpoint = 700;
 
     function menuAtivo() {
@@ -56,7 +55,6 @@ function Header() {
                                     setSobreActive("active");
                                     setProjectsActive("");
                                     setDiplomsActive("");
-                                    setContactActive("");
                                 }}
                             >
                                 Sobre
@@ -70,7 +68,6 @@ function Header() {
                                     setSobreActive("");
                                     setProjectsActive("active");
                                     setDiplomsActive("");
-                                    setContactActive("");
                                 }}
                             >
                                 Projetos
@@ -84,7 +81,6 @@ function Header() {
                                     setSobreActive("");
                                     setProjectsActive("");
                                     setDiplomsActive("active");
-                                    setContactActive("");
                                 }}
                             >
                                 Qualificações
