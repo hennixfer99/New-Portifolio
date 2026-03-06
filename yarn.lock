@@ -9617,13 +9617,6 @@ tsparticles-particles.js@^2.5.3:
   dependencies:
     tsparticles-engine "^2.5.2"
 
-tsparticles-path-curves@^2.5.3:
-  version "2.5.3"
-  resolved "https://registry.npmjs.org/tsparticles-path-curves/-/tsparticles-path-curves-2.5.3.tgz"
-  integrity sha512-y5nbzot3QLgMSX89luyJLhiHJJQFu1nuhErmychRKZqZdmn5c35T6gJG9WrhPXIvcBp9s3PLlLrXgdcNiOIfxA==
-  dependencies:
-    tsparticles-engine "^2.5.2"
-
 tsparticles-plugin-absorbers@^2.5.3:
   version "2.5.3"
   resolved "https://registry.npmjs.org/tsparticles-plugin-absorbers/-/tsparticles-plugin-absorbers-2.5.3.tgz"
@@ -9644,21 +9637,6 @@ tsparticles-plugin-emitters@^2.5.3:
   integrity sha512-yF1qiGJu99EIG40nTLVGwV6JEgpB9NGCynd6chvqby7A01AWoqpaUaQ7AdyblcjpPq2WYkyMhJWdeNEk6YblFQ==
   dependencies:
     tsparticles-engine "^2.5.2"
-
-tsparticles-preset-sea-anemone@^2.5.3:
-  version "2.5.3"
-  resolved "https://registry.npmjs.org/tsparticles-preset-sea-anemone/-/tsparticles-preset-sea-anemone-2.5.3.tgz"
-  integrity sha512-AV9ECHvSNvIPM95vF3Q/uXw5Lnx71SOjtlp8GzjfaoJhlq1X6D1BJhPggEefKHioU9BNOUPYgZ9iNx9qidr8/Q==
-  dependencies:
-    tsparticles-engine "^2.5.2"
-    tsparticles-move-base "^2.5.3"
-    tsparticles-path-curves "^2.5.3"
-    tsparticles-plugin-emitters "^2.5.3"
-    tsparticles-shape-circle "^2.5.3"
-    tsparticles-updater-color "^2.5.3"
-    tsparticles-updater-opacity "^2.5.3"
-    tsparticles-updater-out-modes "^2.5.3"
-    tsparticles-updater-size "^2.5.3"
 
 tsparticles-shape-circle@^2.5.3:
   version "2.5.3"
