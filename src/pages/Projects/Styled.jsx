@@ -28,6 +28,7 @@ const Container = styled.div`
 
     .Modal {
         background-color: var(--modal-background);
+        border: 1px solid var(--border-soft);
         border-radius: 8px;
         max-width: 100%;
         width: 80vw;

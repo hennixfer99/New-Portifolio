@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect x="8" y="8" width="496" height="496" rx="112" ry="112"
+        fill="rgb(222,226,230)" fill-opacity="0.9" stroke="#111" stroke-width="16"/>
+  <line x1="256" y1="96" x2="256" y2="416" stroke="#111" stroke-width="10"/>
+  <text x="142" y="292" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="400" fill="#111">H</text>
+  <text x="370" y="292" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="400" fill="#111">F</text>
+</svg>

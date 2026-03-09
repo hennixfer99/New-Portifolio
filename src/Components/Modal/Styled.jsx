@@ -14,7 +14,7 @@ const Container = styled.div`
 const Modal = styled.div`
     margin: 7% auto;
     background-color: var(--modal-background);
-    border: 1px solid var(--black);
+    border: 1px solid var(--border-soft);
     max-width: 530px;
     padding: 0;
     z-index: 10;
@@ -70,6 +70,7 @@ const Modal = styled.div`
         max-width: 15rem;
         max-height: 7rem;
         border-radius: 8px;
+        background-color: var(--project-background);
     }
 
     main h2 {

@@ -4,6 +4,7 @@ const Container = styled.div`
     .Modal {
         background-color: var(--modal-background);
         max-width: 100%;
+        border: 1px solid var(--border-soft);
         border-radius: 8px;
         width: 80vw;
         height: 80vh;
