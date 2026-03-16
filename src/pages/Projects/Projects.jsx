@@ -197,8 +197,8 @@ function Projects() {
                         tecnologies="HTML, CSS e JavaScript"
                         setProjectNumber={setProjectNumber}
                         img={routerBrasil}
-                        vercel={() => abrirLink("deploy", 7)}
-                        code={() => abrirLink("repo", 7)}
+                        vercel={() => abrirLink("deploy", 6)}
+                        code={() => abrirLink("repo", 6)}
                         alt={"Projeto Router Brasil"}
                     />
                 )}
@@ -210,9 +210,8 @@ function Projects() {
                         description="Projeto autoral desenvolvido com o objetivo de automatizar as lições de inglês, criando um bot que visa fazer as lições propostas, utilizando PLAYWRIGHT, JavaScript, Node.js e Express."
                         tecnologies="PLAYWRIGHT, JavaScript, Node.js e Express"
                         setProjectNumber={setProjectNumber}
-                        img={neverline}
-                        // vercel={() => abrirLink("deploy", 8)}   
-                        code={() => abrirLink("repo", 8)}
+                        img={neverline}   
+                        code={() => abrirLink("repo", 7)}
                         alt={"Projeto Neverline"}
                     />
                 )}
