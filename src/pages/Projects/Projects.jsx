@@ -210,7 +210,7 @@ function Projects() {
                         description="Projeto autoral desenvolvido com o objetivo de automatizar as lições de inglês, criando um bot que visa fazer as lições propostas, utilizando PLAYWRIGHT, JavaScript, Node.js e Express."
                         tecnologies="PLAYWRIGHT, JavaScript, Node.js e Express"
                         setProjectNumber={setProjectNumber}
-                        img={neverline}   
+                        img={neverline}
                         code={() => abrirLink("repo", 7)}
                         alt={"Projeto Neverline"}
                     />
